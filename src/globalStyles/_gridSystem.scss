@@ -11,37 +11,47 @@
   }
 
   .col-1-#{$classExtension} {
-    width: calc((100% / 12) - ($gutter * 11 / 12));
+    width: calc((100% / #{$columns}) - ($gutter * 11 / 12));
   }
   .col-2-#{$classExtension} {
-    width: calc((100% / 6) - ($gutter * 10 / 12));
+    $columnsDividedBy2: calc(#{$columns} / 2);
+    width: calc((100% / #{$columnsDividedBy2}) - ($gutter * 10 / 12));
   }
   .col-3-#{$classExtension} {
-    width: calc(((100% / 4) - ($gutter * 9 / 12)));
+    $columnsDividedBy3: calc(#{$columns} / 3);
+    width: calc(((100% / #{$columnsDividedBy3}) - ($gutter * 9 / 12)));
   }
   .col-4-#{$classExtension} {
-    width: calc((100% / 3) - ($gutter * 8 / 12));
+    $columnsDividedBy4: calc(#{$columns} / 4);
+    width: calc((100% / #{$columnsDividedBy4}) - ($gutter * 8 / 12));
   }
   .col-5-#{$classExtension} {
-    width: calc((100% / (12 / 5)) - ($gutter * 7 / 12));
+    $columnsDividedBy5: calc(#{$columns} / 5);
+    width: calc((100% / #{$columnsDividedBy5}) - ($gutter * 7 / 12));
   }
   .col-6-#{$classExtension} {
-    width: calc((100% / 2) - ($gutter * 6 / 12));
+    $columnsDividedBy6: calc(#{$columns} / 6);
+    width: calc((100% / #{$columnsDividedBy6}) - ($gutter * 6 / 12));
   }
   .col-7-#{$classExtension} {
-    width: calc((100% / (12 / 7)) - ($gutter * 5 / 12));
+    $columnsDividedBy7: calc(#{$columns} / 7);
+    width: calc((100% / #{$columnsDividedBy7}) - ($gutter * 5 / 12));
   }
   .col-8-#{$classExtension} {
-    width: calc((100% / (12 / 8)) - ($gutter * 4 / 12));
+    $columnsDividedBy8: calc(#{$columns} / 8);
+    width: calc((100% / #{$columnsDividedBy8}) - ($gutter * 4 / 12));
   }
   .col-9-#{$classExtension} {
-    width: calc((100% / (12 / 9)) - ($gutter * 3 / 12));
+    $columnsDividedBy9: calc(#{$columns} / 9);
+    width: calc((100% / #{$columnsDividedBy9}) - ($gutter * 3 / 12));
   }
   .col-10-#{$classExtension} {
-    width: calc((100% / (12 / 10)) - ($gutter * 2 / 12));
+    $columnsDividedBy10: calc(#{$columns} / 10);
+    width: calc((100% / #{$columnsDividedBy10}) - ($gutter * 2 / 12));
   }
   .col-11-#{$classExtension} {
-    width: calc((100% / (12 / 11)) - ($gutter * 1 / 12));
+    $columnsDividedBy11: calc(#{$columns} / 11);
+    width: calc((100% / #{$columnsDividedBy11}) - ($gutter * 1 / 12));
   }
   .col-12-#{$classExtension} {
     width: 100%;
