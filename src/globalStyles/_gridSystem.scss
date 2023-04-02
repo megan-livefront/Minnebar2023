@@ -48,19 +48,21 @@
   }
 }
 
-@mixin gridSmall {
-  $mobileGridMargin: rem(16px);
+$mobileGridMargin: rem(16px);
+$tabletGridMargin: rem(32px);
+$desktopGridMargin: rem(120px);
+
+@mixin gridMobile {
   $smallGridWidth: calc(100% - #{$mobileGridMargin} * 2);
   @include grid($smallGridWidth, 12, rem(8px), "sm");
 }
 
-@mixin gridMedium {
-  $tabletGridMargin: rem(32px);
-  $mediumGridWidth: calc(100% - #{$tabletGridMargin} * 2);
-  @include grid($mediumGridWidth, 12, rem(24px), "md");
+@mixin gridTablet {
+  $tabletGridWidth: calc(100% - #{$tabletGridMargin} * 2);
+  @include grid($tabletGridWidth, 12, rem(24px), "md");
 }
 
-@mixin gridLarge {
+@mixin gridDesktop {
   @include grid($desktopRems, 12, rem(24px), "lg");
 }
 
@@ -69,14 +71,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include gridSmall;
+  @include gridMobile;
 
-  @include tabletAndUpWithGridMargin(rem(32px)) {
-    @include gridMedium;
+  @include tabletAndUpWithGridMargin($tabletGridMargin) {
+    @include gridTablet;
   }
 
-  @include desktopAndUpWithGridMargin(rem(120px)) {
-    @include gridLarge;
+  @include desktopAndUpWithGridMargin($desktopGridMargin) {
+    @include gridDesktop;
   }
 }
 
