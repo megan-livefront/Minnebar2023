@@ -1,0 +1,11 @@
+@use '../../../globalStyles/index.scss' as *;
+
+.overlayRow {
+    position: absolute;
+}
+
+.overlayColumn {
+    background: red;
+    opacity: 0.1;
+    height: 100vh;
+}

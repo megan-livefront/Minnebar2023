@@ -1,0 +1,93 @@
+@use "./responsive" as *;
+@use "sass:math";
+
+@mixin grid($width, $columns, $gutter, $classExtension) {
+  .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: calc($width);
+  }
+
+  .col-1-#{$classExtension} {
+    width: calc(($width / 12) - ($gutter * 11 / 12));
+  }
+  .col-2-#{$classExtension} {
+    // width: ($width / 6) - ($gutter * 10 / 12);
+    width: calc(($width / 6) - ($gutter * 10 / 12));
+  }
+  .col-3-#{$classExtension} {
+    width: calc((($width / 4) - ($gutter * 9 / 12)));
+  }
+  .col-4-#{$classExtension} {
+    width: calc(($width / 3) - ($gutter * 8 / 12));
+  }
+  .col-5-#{$classExtension} {
+    width: calc(($width / (12 / 5)) - ($gutter * 7 / 12));
+  }
+  .col-6-#{$classExtension} {
+    width: calc(($width / 2) - ($gutter * 6 / 12));
+  }
+  .col-7-#{$classExtension} {
+    width: calc(($width / (12 / 7)) - ($gutter * 5 / 12));
+  }
+  .col-8-#{$classExtension} {
+    width: calc(($width / (12 / 8)) - ($gutter * 4 / 12));
+  }
+  .col-9-#{$classExtension} {
+    width: calc(($width / (12 / 9)) - ($gutter * 3 / 12));
+  }
+  .col-10-#{$classExtension} {
+    width: calc(($width / (12 / 10)) - ($gutter * 2 / 12));
+  }
+  .col-11-#{$classExtension} {
+    width: calc(($width / (12 / 11)) - ($gutter * 1 / 12));
+  }
+  .col-12-#{$classExtension} {
+    width: calc($width);
+  }
+}
+
+@mixin gridSmall {
+  @include grid(calc(100% - 32px), 12, 8px, "sm");
+}
+
+@mixin gridMedium {
+  @include grid($tabletPixels, 12, 24px, "md");
+}
+
+@mixin gridLarge {
+  @include grid($desktopPixels, 12, 24px, "lg");
+}
+
+.row-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @include gridSmall;
+
+  @include tabletAndUpWithGridMargin(32px) {
+    @include gridMedium;
+  }
+
+  @include desktopAndUpWithGridMargin(120px) {
+    @include gridLarge;
+  }
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-items: center;
+}
+
+.exampleContent {
+  background-color: #ef5350;
+  padding: rem(20px);
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+}

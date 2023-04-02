@@ -1,0 +1,45 @@
+@use "sass:math";
+
+$standardFontSize: 16px;
+$tabletRems: 48rem;
+$desktopRems: 60rem;
+
+/**
+ * Convert rems to pixels.
+ */
+@function remToPx($rems) {
+  @return math.div($rems, 1rem) * $standardFontSize;
+}
+
+$tabletPixels: remToPx($tabletRems);
+$desktopPixels: remToPx($desktopRems);
+
+// Convert pixel values to rems
+// (Assumes 16px default font-size)
+@function rem($pixels) {
+  @return (math.div($pixels, $standardFontSize)) * 1rem;
+}
+
+@mixin tabletAndUp {
+  @media only screen and (min-width: $tabletRems) {
+    @content;
+  }
+}
+
+@mixin desktopAndUp {
+  @media only screen and (min-width: $desktopRems) {
+    @content;
+  }
+}
+
+@mixin tabletAndUpWithGridMargin($margin) {
+  @media only screen and (min-width: ($tabletPixels + $margin)) {
+    @content;
+  }
+}
+
+@mixin desktopAndUpWithGridMargin($margin) {
+  @media only screen and (min-width: ($desktopPixels + $margin)) {
+    @content;
+  }
+}

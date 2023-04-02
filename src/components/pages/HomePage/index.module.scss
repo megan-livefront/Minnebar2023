@@ -1,0 +1,13 @@
+@use '../../../globalStyles/index.scss' as *;
+
+.contentBlockLeft {
+    background: grey;
+    opacity: 0.5;
+    height: rem(400px);
+}
+
+.contentBlockRight {
+    height: rem(300px);
+    background: gold;
+    opacity: 0.5;
+}

@@ -1,0 +1,52 @@
+{
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-prettier",
+    "./config/stylelint/no-flex-gap.js",
+    "./config/stylelint/no-text-decoration-shorthand.js"
+  ],
+  "extends": [
+    "stylelint-config-recommended",
+    "./config/stylelint/relaxed-rational-order",
+    "stylelint-config-prettier"
+  ],
+  "rules": {
+    "prettier/prettier": true,
+    "declaration-no-important": true,
+    "max-nesting-depth": [
+      2,
+      {
+        "severity": "warning"
+      }
+    ],
+    "property-no-unknown": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "at-rule-no-unknown": null,
+    "at-rule-empty-line-before": ["always", {
+      "except": ["first-nested", "blockless-after-same-name-blockless"],
+      "ignore": ["after-comment"],
+      "ignoreAtRules": ["else"]
+    }],
+    "rule-empty-line-before": ["always", {
+      "except": ["first-nested"],
+      "ignore": ["after-comment"]
+    }],
+    "selector-pseudo-element-colon-notation": "double",
+    "scss/at-rule-no-unknown": true,
+    "scss/at-mixin-pattern": "^[a-z][a-zA-Z0-9_]*$",
+    "scss/dollar-variable-pattern": "^[a-z][a-zA-Z0-9_]*$",
+    "string-quotes": "single",
+    "custom-plugin/no-flex-gap": true,
+    "custom-plugin/no-text-decoration-shorthand": true,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ]
+  }
+}
