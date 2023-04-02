@@ -1,13 +1,13 @@
 @use "./responsive" as *;
 @use "sass:math";
 
-@mixin grid($width, $columns, $gutter, $classExtension) {
+@mixin grid($maxWidth, $columns, $gutter, $classExtension) {
   .row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: $width;
+    max-width: $maxWidth;
   }
 
   .col-1-#{$classExtension} {
