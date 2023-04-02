@@ -55,7 +55,9 @@
 }
 
 @mixin gridMedium {
-  @include grid($tabletRems, 12, rem(24px), "md");
+  $tabletGridMargin: rem(32px);
+  $mediumGridWidth: calc(100% - #{$tabletGridMargin} * 2);
+  @include grid($mediumGridWidth, 12, rem(24px), "md");
 }
 
 @mixin gridLarge {
