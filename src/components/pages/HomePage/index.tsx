@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
     <GridOverlay />
-    <div className="row-container align-center">
+    <div className="row-container">
       <div className="row">
         <div className="col-3-lg col-3-md col-6-sm exampleContent">Megan here!</div>
         <div className="col-3-lg col-3-md col-6-sm exampleContent">Megan here!</div>

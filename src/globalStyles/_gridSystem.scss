@@ -14,7 +14,6 @@
     width: calc((100% / 12) - ($gutter * 11 / 12));
   }
   .col-2-#{$classExtension} {
-    // width: ($width / 6) - ($gutter * 10 / 12);
     width: calc((100% / 6) - ($gutter * 10 / 12));
   }
   .col-3-#{$classExtension} {
@@ -50,28 +49,31 @@
 }
 
 @mixin gridSmall {
-  @include grid(calc(100% - 32px), 12, 8px, "sm");
+  $mobileGridMargin: rem(16px);
+  $smallGridWidth: calc(100% - #{$mobileGridMargin} * 2);
+  @include grid($smallGridWidth, 12, 8px, "sm");
 }
 
 @mixin gridMedium {
-  @include grid($tabletPixels, 12, 24px, "md");
+  @include grid($tabletRems, 12, 24px, "md");
 }
 
 @mixin gridLarge {
-  @include grid($desktopPixels, 12, 24px, "lg");
+  @include grid($desktopRems, 12, 24px, "lg");
 }
 
 .row-container {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   @include gridSmall;
 
-  @include tabletAndUpWithGridMargin(32px) {
+  @include tabletAndUpWithGridMargin(rem(32px)) {
     @include gridMedium;
   }
 
-  @include desktopAndUpWithGridMargin(120px) {
+  @include desktopAndUpWithGridMargin(rem(120px)) {
     @include gridLarge;
   }
 }
