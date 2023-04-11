@@ -1,5 +1,4 @@
-import GridOverlay from "@/components/blocks/GridOverlay";
-import Header from "@/components/infrastructure/Header";
+import BlackoutText from "@/components/blocks/BlackoutText";
 import styles from "./index.module.scss";
 
 export default function HeroSection() {
@@ -16,7 +15,7 @@ export default function HeroSection() {
         <div
           className={`col-7-lg col-7-md col-12-sm ${styles.textContent}`}
         >
-          <h1>Unlocking the Secrets of the Universe:</h1>
+          <h1>Unlocking the <BlackoutText text="Fake Ass" /> Secrets of the <BlackoutText text="Real Ass" /> Universe:</h1>
           <p className={styles.subheading}>One Stupid Book at a Time</p>
         </div>
       </div>

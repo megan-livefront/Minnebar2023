@@ -1,0 +1,19 @@
+@use "../../../styles/index.scss" as *;
+
+.container {
+  position: relative;
+  width: max-content;
+  display: inline;
+}
+
+.blackoutLine {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background: black;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  opacity: .95;
+}
