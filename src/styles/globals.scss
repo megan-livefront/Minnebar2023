@@ -1,0 +1,43 @@
+@use "./gridSystem" as *;
+@use "./colors" as *;
+@use "./typography" as *;
+@use "./responsive" as *;
+@use "sass:math";
+
+@font-face {
+  font-family: "PPTelegraf-UltraBold";
+  src: url(./fonts/PPTelegraf-UltraBold.otf) format("otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(./fonts/Poppins-Light.ttf) format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(./fonts/Poppins-Regular.ttf) format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url(./fonts/Poppins-SemiBold.ttf) format("tff");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $colorBackground;
+
+  @include textBodyRegular;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

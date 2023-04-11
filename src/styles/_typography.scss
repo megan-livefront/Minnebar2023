@@ -1,0 +1,164 @@
+@use "./colors" as *;
+@use "./responsive" as *;
+
+@mixin textDisplay {
+  font-size: rem(80px);
+  line-height: rem(100px);
+  letter-spacing: -0.2%;
+  font-family: 'PPTelegraph-UltraBold';
+
+  @include desktopAndUp {
+    font-size: rem(160px);
+    line-height: rem(200px);
+  }
+}
+
+@mixin textDisplay02 {
+  font-size: rem(54px);
+  line-height: rem(60px);
+  letter-spacing: -1.8%;
+  font-family: 'PPTelegraph-UltraBold';
+
+  @include desktopAndUp {
+    font-size: rem(72px);
+    line-height: rem(80px);
+  }
+}
+
+@mixin textHeading01 {
+  font-size: rem(56px);
+  line-height: rem(60px);
+  letter-spacing: -1.5%;
+  font-family: 'PPTelegraph-UltraBold';
+}
+
+@mixin textHeading02 {
+  font-size: rem(48px);
+  line-height: rem(56px);
+  letter-spacing: rem(-1.5px);
+  font-family: 'PPTelegraph-UltraBold';
+}
+
+@mixin textHeading03 {
+  font-size: rem(25px);
+  line-height: rem(32px);
+  letter-spacing: -1.5%;
+  font-family: 'PPTelegraph-UltraBold';
+
+  @include desktopAndUp {
+    font-size: rem(40px);
+    line-height: rem(48px);
+  }
+}
+
+@mixin textHeading04 {
+  font-size: rem(16px);
+  line-height: rem(24px);
+  letter-spacing: -1.2%;
+  font-family: 'PPTelegraph-UltraBold';
+
+  @include desktopAndUp {
+    font-size: rem(24px);
+    line-height: rem(32px);
+  }
+}
+
+@mixin textSubheading01 {
+  font-size: rem(16px);
+  line-height: rem(24px);
+  letter-spacing: -1.2%;
+  font-family: 'Poppins-SemiBold';
+
+  @include desktopAndUp {
+    font-size: rem(24px);
+    line-height: rem(32px);
+  }
+}
+
+@mixin textSubheading02 {
+  font-size: rem(16px);
+  line-height: rem(24px);
+  letter-spacing: -1.5%;
+  font-family: 'Poppins-SemiBold';
+
+  @include desktopAndUp {
+    font-size: rem(20px);
+    line-height: rem(28px);
+  }
+}
+
+@mixin textSubheading03 {
+  font-size: rem(16px);
+  line-height: rem(24px);
+  letter-spacing: -1.2%;
+  font-family: 'Poppins-SemiBold';
+}
+
+@mixin textBodyLarge {
+  font-size: rem(16px);
+  line-height: rem(24px);
+  letter-spacing: 0;
+  font-family: 'Poppins-Light';
+
+  @include desktopAndUp {
+    font-size: rem(18px);
+    line-height: rem(26px);
+  }
+}
+
+@mixin textBodyRegular {
+  font-size: rem(16px);
+  line-height: rem(24px);
+  letter-spacing: 0;
+  font-family: 'Poppins-Light';
+}
+
+@mixin textBodySmall {
+  font-size: rem(14px);
+  line-height: rem(20px);
+  letter-spacing: 0;
+  font-family: 'Poppins-Light';
+}
+
+@mixin textBodyTiny {
+  font-size: rem(12px);
+  line-height: rem(16px);
+  letter-spacing: 0;
+  font-family: 'Poppins-Light';
+}
+
+@mixin textButtonRegular {
+  font-size: rem(12px);
+  line-height: rem(16px);
+  letter-spacing: 0;
+  font-family: 'Poppins-Light';
+
+  @include desktopAndUp {
+    font-size: rem(17px);
+    line-height: rem(24px);
+    font-family: 'Poppins-SemiBold';
+  }
+}
+
+@mixin textButtonSmall {
+  font-size: rem(14px);
+  line-height: rem(20px);
+  letter-spacing: 0;
+  font-family: 'Poppins-SemiBold';
+}
+
+@mixin textCaption02 {
+  font-size: rem(14px);
+  line-height: rem(14px);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-family: 'Poppins-Regular';
+}
+
+@mixin textCaption03 {
+  font-size: rem(12px);
+  line-height: rem(12px);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-family: 'Poppins-Regular';
+}

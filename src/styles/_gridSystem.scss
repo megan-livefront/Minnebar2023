@@ -1,6 +1,13 @@
 @use "./responsive" as *;
 @use "sass:math";
 
+@mixin setColumnWidth($columnNumber, $maxColumns, $gutter) {
+  $columnDifference: calc(#{$maxColumns} - #{$columnNumber});
+  $gutters: calc(#{$gutter} * #{$columnDifference} / #{$maxColumns});
+  $columnsDividedColumnNumber: calc(#{$maxColumns} / #{$columnNumber});
+  width: calc((100% / #{$columnsDividedColumnNumber}) - #{$gutters});
+}
+
 @mixin grid($maxWidth, $columns, $gutter, $classExtension) {
   .row {
     width: 100%;
@@ -11,47 +18,37 @@
   }
 
   .col-1-#{$classExtension} {
-    width: calc((100% / #{$columns}) - ($gutter * 11 / 12));
+    @include setColumnWidth(1, $columns, $gutter);
   }
   .col-2-#{$classExtension} {
-    $columnsDividedBy2: calc(#{$columns} / 2);
-    width: calc((100% / #{$columnsDividedBy2}) - ($gutter * 10 / 12));
+    @include setColumnWidth(2, $columns, $gutter);
   }
   .col-3-#{$classExtension} {
-    $columnsDividedBy3: calc(#{$columns} / 3);
-    width: calc(((100% / #{$columnsDividedBy3}) - ($gutter * 9 / 12)));
+    @include setColumnWidth(3, $columns, $gutter);
   }
   .col-4-#{$classExtension} {
-    $columnsDividedBy4: calc(#{$columns} / 4);
-    width: calc((100% / #{$columnsDividedBy4}) - ($gutter * 8 / 12));
+    @include setColumnWidth(4, $columns, $gutter);
   }
   .col-5-#{$classExtension} {
-    $columnsDividedBy5: calc(#{$columns} / 5);
-    width: calc((100% / #{$columnsDividedBy5}) - ($gutter * 7 / 12));
+    @include setColumnWidth(5, $columns, $gutter);
   }
   .col-6-#{$classExtension} {
-    $columnsDividedBy6: calc(#{$columns} / 6);
-    width: calc((100% / #{$columnsDividedBy6}) - ($gutter * 6 / 12));
+    @include setColumnWidth(6, $columns, $gutter);
   }
   .col-7-#{$classExtension} {
-    $columnsDividedBy7: calc(#{$columns} / 7);
-    width: calc((100% / #{$columnsDividedBy7}) - ($gutter * 5 / 12));
+    @include setColumnWidth(7, $columns, $gutter);
   }
   .col-8-#{$classExtension} {
-    $columnsDividedBy8: calc(#{$columns} / 8);
-    width: calc((100% / #{$columnsDividedBy8}) - ($gutter * 4 / 12));
+    @include setColumnWidth(8, $columns, $gutter);
   }
   .col-9-#{$classExtension} {
-    $columnsDividedBy9: calc(#{$columns} / 9);
-    width: calc((100% / #{$columnsDividedBy9}) - ($gutter * 3 / 12));
+    @include setColumnWidth(9, $columns, $gutter);
   }
   .col-10-#{$classExtension} {
-    $columnsDividedBy10: calc(#{$columns} / 10);
-    width: calc((100% / #{$columnsDividedBy10}) - ($gutter * 2 / 12));
+    @include setColumnWidth(10, $columns, $gutter);
   }
   .col-11-#{$classExtension} {
-    $columnsDividedBy11: calc(#{$columns} / 11);
-    width: calc((100% / #{$columnsDividedBy11}) - ($gutter * 1 / 12));
+    @include setColumnWidth(11, $columns, $gutter);
   }
   .col-12-#{$classExtension} {
     width: 100%;
@@ -64,7 +61,7 @@ $desktopGridMargin: rem(120px);
 
 @mixin gridMobile {
   $smallGridWidth: calc(100% - #{$mobileGridMargin} * 2);
-  @include grid($smallGridWidth, 12, rem(8px), "sm");
+  @include grid($smallGridWidth, 4, rem(8px), "sm");
 }
 
 @mixin gridTablet {

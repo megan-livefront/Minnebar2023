@@ -1,9 +1,10 @@
-@use '../../../globalStyles/index.scss' as *;
+@use '../../../styles/index.scss' as *;
 
 .contentBlockLeft {
     background: grey;
     opacity: 0.5;
     height: rem(400px);
+    @include textDisplay02;
 }
 
 .contentBlockRight {
