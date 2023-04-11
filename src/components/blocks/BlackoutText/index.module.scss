@@ -10,10 +10,10 @@
   position: absolute;
   height: 50%;
   width: 100%;
-  background: black;
+  background: $colorGray500;
   top: 50%;
   left: 0;
   right: 0;
   transform: translateY(-50%);
-  opacity: .95;
+  opacity: .98;
 }
