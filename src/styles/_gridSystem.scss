@@ -70,7 +70,7 @@ $desktopGridMargin: rem(120px);
 }
 
 @mixin gridDesktop {
-  @include grid($desktopRems, 12, rem(24px), "lg");
+  @include grid($desktopRems, 12, rem(32px), "lg");
 }
 
 .row-container {

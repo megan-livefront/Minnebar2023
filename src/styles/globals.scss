@@ -41,3 +41,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+h1 {
+  @include textDisplay02;
+}

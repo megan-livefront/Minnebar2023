@@ -1,0 +1,22 @@
+@use "../../../styles/index.scss" as *;
+
+.container {
+  position: absolute;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navLink {
+  margin-left: rem(32px);
+  color: $colorTextBodyInverse;
+  text-decoration: none;
+  @include textBodySmall;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

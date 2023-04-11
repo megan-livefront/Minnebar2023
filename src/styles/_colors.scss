@@ -1,12 +1,14 @@
-$colorGray500: #29242B;
-$colorPrimary500: #452B4F;
-$colorSecondary500: #FE805D;
-$colorTertiary500: #FFBD76;
-$colorSuccess500: #0F9918;
-$colorError500: #E54545;
-$colorPrimaryBackground: #FAF4F0;
-$colorSecondaryBackground: #F6EADE;
+$colorGray500: #29242b;
+$colorPrimary500: #452b4f;
+$colorSecondary500: #fe805d;
+$colorTertiary500: #ffbd76;
+$colorSuccess500: #0f9918;
+$colorError500: #e54545;
+$colorPrimaryBackground: #faf4f0;
+$colorSecondaryBackground: #f6eade;
+$colorWhite: #ffffff;
 
 // Our color assignments
 $colorTextBody: $colorGray500;
+$colorTextBodyInverse: $colorWhite;
 $colorBackground: $colorPrimaryBackground;
