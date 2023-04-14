@@ -1,0 +1,20 @@
+@use "../../../../styles/index.scss" as *;
+
+.container {
+  background: $colorSecondary500;
+  padding: rem(32px) 0;
+  position: relative;
+}
+
+.searchHeader {
+  margin-bottom: rem(8px);
+  
+  @include textSubheading03;
+}
+
+.floatingImage {
+  position: absolute;
+  width: 30%;
+  left: 0;
+  bottom: rem(-24px);
+}

@@ -32,13 +32,19 @@ $desktopPixels: remToPx($desktopRems);
   }
 }
 
-@mixin tabletAndUpWithGridMargin($margin) {
-  @media only screen and (min-width: ($tabletRems + $margin * 2)) {
+@mixin mobileWithGridMargin($margin) {
+  @media only screen and (max-width: ($tabletRems + $margin * 2 - 1)) {
     @content;
   }
 }
 
-@mixin desktopAndUpWithGridMargin($margin) {
+@mixin tabletWithGridMargin($margin) {
+  @media only screen and (min-width: ($tabletRems + $margin * 2)) and (max-width: ($desktopRems + $margin * 2 + 1)) {
+    @content;
+  }
+}
+
+@mixin desktopWithGridMargin($margin) {
   @media only screen and (min-width: ($desktopRems + $margin * 2)) {
     @content;
   }

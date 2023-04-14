@@ -1,0 +1,31 @@
+@use "../../../styles/index.scss" as *;
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: $colorSecondary100;
+    border-radius: rem(5px);
+
+    &:focus-within {
+        outline: rem(1px) solid $colorPrimary500;
+        box-shadow: 0px 0px 8px 0px rgba(122, 90, 248, 0.23);
+    }
+
+    img {
+        width: rem(24px);
+        margin-left: rem(16px);
+    }
+
+    input {
+        border: none;
+        background-color: $colorSecondary100;
+        width: 100%;
+        padding: rem(12px) rem(16px) rem(12px) rem(12px);
+        border-radius: rem(5px);
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

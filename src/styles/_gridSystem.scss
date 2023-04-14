@@ -8,13 +8,42 @@
   width: calc((100% / #{$columnsDividedColumnNumber}) - #{$gutters});
 }
 
+@mixin rowBasics($maxWidth) {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: $maxWidth;
+}
+
 @mixin grid($maxWidth, $columns, $gutter, $classExtension) {
+  .row-#{$classExtension},
   .row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    @include rowBasics($maxWidth);
     justify-content: space-between;
-    max-width: $maxWidth;
+  }
+
+  .row-justify-end-#{$classExtension},
+  .row-justify-end {
+    @include rowBasics($maxWidth);
+    justify-content: flex-end;
+  }
+
+  .row-justify-center-#{$classExtension},
+  .row-justify-center {
+    @include rowBasics($maxWidth);
+    justify-content: center;
+  }
+
+  .row-reverse-#{$classExtension},
+  .row-reverse {
+    @include rowBasics($maxWidth);
+    flex-direction: row-reverse;
+  }
+
+  .column-reverse-#{$classExtension},
+  .column-reverse {
+    @include rowBasics($maxWidth);
+    flex-direction: column-reverse;
   }
 
   .col-1-#{$classExtension} {
@@ -78,29 +107,16 @@ $desktopGridMargin: rem(48px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include gridMobile;
 
-  @include tabletAndUpWithGridMargin($tabletGridMargin) {
+  @include mobileWithGridMargin($tabletGridMargin) {
+    @include gridMobile;
+  }
+
+  @include tabletWithGridMargin($tabletGridMargin) {
     @include gridTablet;
   }
 
-  @include desktopAndUpWithGridMargin($desktopGridMargin) {
+  @include desktopWithGridMargin($desktopGridMargin) {
     @include gridDesktop;
   }
-}
-
-.align-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-items: center;
-}
-
-.exampleContent {
-  background-color: #ef5350;
-  padding: rem(20px);
-  border: 1px solid white;
-  text-align: center;
-  color: white;
 }
