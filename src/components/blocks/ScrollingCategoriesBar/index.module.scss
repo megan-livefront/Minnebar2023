@@ -1,0 +1,32 @@
+@use "../../../styles/index.scss" as *;
+
+$animationSpeed: 40s;
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+.slider {
+	background: $colorPrimary500;
+	height: rem(64px);
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+    color: white;
+	
+	.slideTrack {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: rem(64px);
+		width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+	}
+}

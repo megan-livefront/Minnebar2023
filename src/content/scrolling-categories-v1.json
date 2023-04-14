@@ -1,0 +1,66 @@
+{
+    "id": "36c481f5-8f76-4172-8584-39102d239162",
+    "title": "Scrolling Categories",
+    "urlSlug": "scrolling-categories-v1",
+    "attributes": {
+      "categories": [
+        {
+            "icon": "/assets/images/icons/alien.svg",
+            "title": "The Menagerie of Make-Believe"
+        },
+        {
+            "icon": "/assets/images/icons/ghost.svg",
+            "title": "Hidden Handshakes"
+        },
+        {
+            "icon": "/assets/images/icons/seaMonster.svg",
+            "title": "Out of This World Cover-Ups"
+        },
+        {
+            "icon": "/assets/images/icons/illuminati.svg",
+            "title": "Spectral Shenanigans"
+        },
+        {
+            "icon": "/assets/images/icons/alien.svg",
+            "title": "Secrets of the Dark Arts"
+        },
+        {
+            "icon": "/assets/images/icons/ghost.svg",
+            "title": "Deep State Secrets"
+        },
+        {
+            "icon": "/assets/images/icons/seaMonster.svg",
+            "title": "Pizzagate Explained"
+        },
+        {
+            "icon": "/assets/images/icons/alien.svg",
+            "title": "The Menagerie of Make-Believe"
+        },
+        {
+            "icon": "/assets/images/icons/ghost.svg",
+            "title": "Hidden Handshakes"
+        },
+        {
+            "icon": "/assets/images/icons/seaMonster.svg",
+            "title": "Out of This World Cover-Ups"
+        },
+        {
+            "icon": "/assets/images/icons/illuminati.svg",
+            "title": "Spectral Shenanigans"
+        },
+        {
+            "icon": "/assets/images/icons/alien.svg",
+            "title": "Secrets of the Dark Arts"
+        },
+        {
+            "icon": "/assets/images/icons/ghost.svg",
+            "title": "Deep State Secrets"
+        },
+        {
+            "icon": "/assets/images/icons/seaMonster.svg",
+            "title": "Pizzagate Explained"
+        }
+      ]
+    }
+  }
+  
