@@ -32,6 +32,7 @@ body {
   margin: 0;
   padding: 0;
   background: $colorBackground;
+  color: $colorTextBody;
 
   @include textBodyRegular;
 }
@@ -43,5 +44,31 @@ body {
 }
 
 h1 {
-  @include textDisplay02;
+  color: $colorTextHeading;
+
+  @include textHeading01;
+}
+
+h2 {
+  color: $colorTextHeading;
+
+  @include textHeading02;
+}
+
+h3 {
+  color: $colorTextHeading;
+
+  @include textHeading03;
+}
+
+h4 {
+  color: $colorTextHeading;
+
+  @include textHeading04;
+}
+
+.subheading {
+  color: $colorTextHeading;
+
+  @include textSubheading01;
 }

@@ -1,19 +1,20 @@
 @use "../../../../styles/index.scss" as *;
 
-.container {
-  background: darkolivegreen;
-  color: $colorTextBodyInverse;
-}
-
 .content {
-  margin: rem(186px) 0 rem(190px);
+  flex-direction: column-reverse;
+  margin: rem(48px) 0;
 }
 
 .image {
   max-width: 100%;
-  padding: 0 rem(80px) 0 rem(32px);
 }
 
-.subheading {
-  @include textSubheading01;
+@include tabletAndUp {
+  .content {
+    flex-direction: row;
+  }
+
+  // .searchSection {
+  //   justify-content: flex-end;
+  // }
 }

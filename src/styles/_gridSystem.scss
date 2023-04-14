@@ -55,18 +55,18 @@
   }
 }
 
-$mobileGridMargin: rem(16px);
-$tabletGridMargin: rem(32px);
-$desktopGridMargin: rem(120px);
+$mobileGridMargin: rem(24px);
+$tabletGridMargin: rem(48px);
+$desktopGridMargin: rem(48px);
 
 @mixin gridMobile {
   $smallGridWidth: calc(100% - #{$mobileGridMargin} * 2);
-  @include grid($smallGridWidth, 4, rem(8px), "sm");
+  @include grid($smallGridWidth, 2, rem(24px), "sm");
 }
 
 @mixin gridTablet {
   $tabletGridWidth: calc(100% - #{$tabletGridMargin} * 2);
-  @include grid($tabletGridWidth, 12, rem(24px), "md");
+  @include grid($tabletGridWidth, 12, rem(32px), "md");
 }
 
 @mixin gridDesktop {

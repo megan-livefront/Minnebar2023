@@ -25,7 +25,7 @@ export default function Header() {
             Account
           </a>
           <a className={styles.navLink} href="/">
-            <img src="/assets/images/shoppingBagIcon.svg" alt="Shopping bag" />
+            <img src="/assets/images/header/shoppingBagIcon.svg" alt="Shopping bag" />
           </a>
         </div>
       </div>

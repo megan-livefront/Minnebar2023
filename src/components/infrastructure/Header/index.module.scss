@@ -1,9 +1,5 @@
 @use "../../../styles/index.scss" as *;
 
-.container {
-  position: absolute;
-}
-
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -12,8 +8,8 @@
 
 .navLink {
   margin-left: rem(32px);
-  color: $colorTextBodyInverse;
   text-decoration: none;
+
   @include textBodySmall;
 
   &:hover {

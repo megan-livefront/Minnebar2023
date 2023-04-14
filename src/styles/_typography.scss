@@ -13,7 +13,7 @@
   }
 }
 
-@mixin textDisplay02 {
+@mixin textHeading01 {
   font-size: rem(54px);
   line-height: rem(60px);
   letter-spacing: -1.8%;
@@ -23,13 +23,6 @@
     font-size: rem(72px);
     line-height: rem(80px);
   }
-}
-
-@mixin textHeading01 {
-  font-size: rem(56px);
-  line-height: rem(60px);
-  letter-spacing: -1.5%;
-  font-family: 'PPTelegraf-UltraBold';
 }
 
 @mixin textHeading02 {
