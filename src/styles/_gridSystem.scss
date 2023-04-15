@@ -84,10 +84,6 @@
   }
 }
 
-$mobileGridMargin: rem(24px);
-$tabletGridMargin: rem(48px);
-$desktopGridMargin: rem(48px);
-
 @mixin gridMobile {
   $smallGridWidth: calc(100% - #{$mobileGridMargin} * 2);
   @include grid($smallGridWidth, 2, rem(24px), "sm");
@@ -108,15 +104,15 @@ $desktopGridMargin: rem(48px);
   flex-direction: column;
   align-items: center;
 
-  @include mobileWithGridMargin($tabletGridMargin) {
+  @include mobileOnly{
     @include gridMobile;
   }
 
-  @include tabletWithGridMargin($tabletGridMargin) {
+  @include tabletOnly {
     @include gridTablet;
   }
 
-  @include desktopWithGridMargin($desktopGridMargin) {
+  @include desktopOnly {
     @include gridDesktop;
   }
 }

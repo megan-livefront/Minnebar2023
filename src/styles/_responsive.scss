@@ -1,6 +1,7 @@
 @use "sass:math";
 
 $standardFontSize: 16px;
+
 $tabletRems: 48rem;
 $desktopRems: 72.5rem;
 
@@ -14,6 +15,18 @@ $desktopRems: 72.5rem;
 $tabletPixels: remToPx($tabletRems);
 $desktopPixels: remToPx($desktopRems);
 
+$mobileGridMargin: 1.5rem;
+$tabletGridMargin: 3rem;
+$desktopGridMargin: 3rem;
+
+$mobileGridMarginPx: remToPx($mobileGridMargin);
+$tabletGridMarginPx: remToPx($tabletGridMargin);
+$desktopGridMarginPx: remToPx($desktopGridMargin);
+
+$tabletMinWidth: 864px;
+$desktopMinWidth: 1256px;
+$mobileMaxWidth: 863px;
+
 // Convert pixel values to rems
 // (Assumes 16px default font-size)
 @function rem($pixels) {
@@ -21,31 +34,31 @@ $desktopPixels: remToPx($desktopRems);
 }
 
 @mixin tabletAndUp {
-  @media only screen and (min-width: $tabletRems) {
+  @media only screen and (min-width: $tabletMinWidth) {
     @content;
   }
 }
 
 @mixin desktopAndUp {
-  @media only screen and (min-width: $desktopRems) {
+  @media only screen and (min-width: $desktopMinWidth) {
     @content;
   }
 }
 
-@mixin mobileWithGridMargin($margin) {
-  @media only screen and (max-width: ($tabletRems + $margin * 2 - 1)) {
+@mixin mobileOnly {
+  @media only screen and (max-width: $mobileMaxWidth) {
     @content;
   }
 }
 
-@mixin tabletWithGridMargin($margin) {
-  @media only screen and (min-width: ($tabletRems + $margin * 2)) and (max-width: ($desktopRems + $margin * 2 + 1)) {
+@mixin tabletOnly {
+  @media only screen and (min-width: $tabletMinWidth) and (max-width: ($desktopMinWidth - 1px)) {
     @content;
   }
 }
 
-@mixin desktopWithGridMargin($margin) {
-  @media only screen and (min-width: ($desktopRems + $margin * 2)) {
+@mixin desktopOnly {
+  @media only screen and (min-width: $desktopMinWidth) {
     @content;
   }
 }

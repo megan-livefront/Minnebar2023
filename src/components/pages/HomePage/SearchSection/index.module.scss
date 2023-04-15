@@ -8,16 +8,23 @@
 
 .searchHeader {
   margin-bottom: rem(8px);
-  
+
   @include textSubheading03;
 }
 
 .floatingImage {
   position: absolute;
-  width: 30%;
-  left: 0;
+  width: 60%;
+  left: -10%;
   bottom: 80%;
   z-index: 1;
+}
+
+@include tabletAndUp {
+  .floatingImage {
+    left: 0;
+    width: 30%;
+  }
 }
 
 @include desktopAndUp {

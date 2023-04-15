@@ -7,7 +7,7 @@ import SearchSection from "./SearchSection";
 const HomePage: React.FunctionComponent = () => {
   return (
     <>
-      {/* <GridOverlay /> */}
+      <GridOverlay />
       <Header />
       <HeroSection />
       <SearchSection />

@@ -12,7 +12,7 @@ const SearchSection: React.FunctionComponent = () => {
       <div
         className={`row row-justify-end-md row-justify-end-lg ${styles.searchSection}`}
       >
-        <div className={`col-7-lg col-7-md col-12-sm ${styles.textContent}`}>
+        <div className={`col-7-lg col-12-md col-2-sm ${styles.textContent}`}>
           <div className={styles.searchHeader}>
             Who needs facts when you've got theories?
           </div>
