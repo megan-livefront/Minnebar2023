@@ -22,6 +22,19 @@
   align-items: center;
 }
 
+.imgWrapper {
+  position: relative;
+  height: rem(160px);
+
+  img {
+    height: rem(150px);
+    position: absolute;
+    bottom: rem(-32px);
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
 .heading {
   max-width: 50%;
 }
@@ -40,5 +53,16 @@
   .booksWrapper {
     flex-direction: row;
     padding: rem(16px) rem(32px);
+  }
+
+  .imgWrapper {
+    height: auto;
+
+    img {
+      height: auto;
+      left: unset;
+      transform: none;
+      width: 80%;
+    }
   }
 }

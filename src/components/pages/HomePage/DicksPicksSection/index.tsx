@@ -8,7 +8,7 @@ const DicksPicksSection: React.FunctionComponent = () => {
   const { books } = content.attributes;
   const booksToDisplayDesktop = books;
   const booksToDisplayTabletAndDown = books.slice(0, 3);
-  
+
   const getBookPicks = (booksToDisplay: typeof books, className: string) =>
     booksToDisplay.map((book) => (
       <div className={`${className} col-4 col-2-sm`}>
@@ -45,8 +45,8 @@ const DicksPicksSection: React.FunctionComponent = () => {
             headfirst into your great awakening, then look no further.
           </div>
         </div>
-        <div className={`${styles.headingWrapper} col-4`}>
-          <div>placeholder</div>
+        <div className={`${styles.imgWrapper} col-4`}>
+          <img src="/assets/images/homePage/dick.png" alt="photo of Richard" />
         </div>
       </div>
       <div className="row">
