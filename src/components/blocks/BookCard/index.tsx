@@ -14,7 +14,7 @@ const BookCard: React.FunctionComponent<Props> = ({
   price,
 }) => {
   return (
-    <div className={styles.container} aria-hidden>
+    <div className={styles.container}>
       <img className={styles.bookCover} src={imgSrc} alt={`${title} book cover`} />
       <div className={styles.content}>
         <div className={styles.orangeArch}></div>

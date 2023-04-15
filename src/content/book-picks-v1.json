@@ -1,0 +1,25 @@
+{
+    "id": "36c481f5-8f76-4172-8584-39102d23959c",
+    "title": "Book Picks",
+    "urlSlug": "book-picks-v1",
+    "attributes": {
+      "books": [
+        {
+            "imgSrc": "/assets/images/bookPicks/chemtrails.png",
+            "title": "How Do Airplanes Make Clouds",
+            "price": "99.99"
+        },
+        {
+            "imgSrc": "/assets/images/bookPicks/flatEarth.png",
+            "title": "Flat. Out. Wrong",
+            "price": "99.99"
+        },
+        {
+            "imgSrc": "/assets/images/bookPicks/moon.png",
+            "title": "Moonsplaining",
+            "price": "99.99"
+        }
+      ]
+    }
+  }
+  

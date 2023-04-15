@@ -1,4 +1,4 @@
-import content from "../../../content/scrolling-categories-v1.json";
+import content from "@/content/scrolling-categories-v1.json";
 import styles from "./index.module.scss";
 
 const ScrollingCategoriesBar: React.FunctionComponent = () => {

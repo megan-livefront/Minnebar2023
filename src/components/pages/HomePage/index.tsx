@@ -4,6 +4,7 @@ import Header from "@/components/infrastructure/Header";
 import HeroSection from "./HeroSection";
 import SearchSection from "./SearchSection";
 import NewArrivalsSection from "./NewArrivalsSection";
+import DicksPicksSection from "./DicksPicksSection";
 
 const HomePage: React.FunctionComponent = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage: React.FunctionComponent = () => {
       <SearchSection />
       <ScrollingCategoriesBar />
       <NewArrivalsSection />
+      <DicksPicksSection />
     </>
   );
 }

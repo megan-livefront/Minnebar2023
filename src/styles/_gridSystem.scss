@@ -46,40 +46,40 @@
     flex-direction: column-reverse;
   }
 
-  .col-1-#{$classExtension} {
+  .col-1-#{$classExtension}, .col-1 {
     @include setColumnWidth(1, $columns, $gutter);
   }
-  .col-2-#{$classExtension} {
+  .col-2-#{$classExtension}, .col-2 {
     @include setColumnWidth(2, $columns, $gutter);
   }
-  .col-3-#{$classExtension} {
+  .col-3-#{$classExtension}, .col-3 {
     @include setColumnWidth(3, $columns, $gutter);
   }
-  .col-4-#{$classExtension} {
+  .col-4-#{$classExtension}, .col-4 {
     @include setColumnWidth(4, $columns, $gutter);
   }
-  .col-5-#{$classExtension} {
+  .col-5-#{$classExtension}, .col-5 {
     @include setColumnWidth(5, $columns, $gutter);
   }
-  .col-6-#{$classExtension} {
+  .col-6-#{$classExtension}, .col-6 {
     @include setColumnWidth(6, $columns, $gutter);
   }
-  .col-7-#{$classExtension} {
+  .col-7-#{$classExtension}, .col-7 {
     @include setColumnWidth(7, $columns, $gutter);
   }
-  .col-8-#{$classExtension} {
+  .col-8-#{$classExtension}, .col-8 {
     @include setColumnWidth(8, $columns, $gutter);
   }
-  .col-9-#{$classExtension} {
+  .col-9-#{$classExtension}, .col-9 {
     @include setColumnWidth(9, $columns, $gutter);
   }
-  .col-10-#{$classExtension} {
+  .col-10-#{$classExtension}, .col-10 {
     @include setColumnWidth(10, $columns, $gutter);
   }
-  .col-11-#{$classExtension} {
+  .col-11-#{$classExtension}, .col-11 {
     @include setColumnWidth(11, $columns, $gutter);
   }
-  .col-12-#{$classExtension} {
+  .col-12-#{$classExtension}, .col-12 {
     width: 100%;
   }
 }

@@ -126,15 +126,14 @@
 }
 
 @mixin textButtonRegular {
-  font-size: rem(12px);
-  line-height: rem(16px);
+  font-size: rem(14px);
+  line-height: rem(20px);
   letter-spacing: 0;
-  font-family: 'Poppins-Light';
+  font-family: 'Poppins-SemiBold';
 
   @include desktopAndUp {
     font-size: rem(17px);
     line-height: rem(24px);
-    font-family: 'Poppins-SemiBold';
   }
 }
 

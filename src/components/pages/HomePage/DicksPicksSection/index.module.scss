@@ -1,0 +1,31 @@
+@use "../../../../styles/index.scss" as *;
+
+.container {
+    height: 400px;
+    background: linear-gradient(
+        to bottom,
+        $colorBackground 0%,
+        $colorBackground 60%,
+        $colorPrimary500 60%,
+        $colorPrimary500 100%
+    );
+}
+
+.headingWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.introWrapper {
+    background: $colorWhite;
+    padding: rem(32px);
+    margin-top: rem(16px);
+}
+
+.booksWrapper {
+    background: $colorTertiary500;
+    display: flex;
+    justify-content: space-between;
+    padding: rem(16px) rem(32px);
+}

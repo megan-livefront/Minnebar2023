@@ -16,7 +16,7 @@ const HeroSection: React.FunctionComponent = () => {
           className={`col-8-lg col-8-md col-12-sm ${styles.textContent}`}
         >
           <h1>Unlocking the <BlackoutText text="Fake Ass" /> Secrets of the <BlackoutText text="Stupid" /> Universe:</h1>
-          <p className="subheading1">One Bullshit Book at a Time</p>
+          <span className="subheading1">One <BlackoutText text="Baseless" /> Book at a Time</span>
         </div>
       </div>
     </div>

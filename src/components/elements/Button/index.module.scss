@@ -1,0 +1,59 @@
+@use "../../../styles/index.scss" as *;
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.container {
+  padding: rem(14px) rem(32px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: rem(1.5px) solid $colorPrimary500;
+
+  @include textButtonRegular;
+
+  .loadingIcon {
+    display: none;
+    animation: spin 2s linear infinite;
+  }
+
+  &.solid {
+    background: $colorPrimary500;
+    color: $colorWhite;
+  }
+
+  &.outlined {
+    background: $colorWhite;
+    color: $colorPrimary500;
+  }
+
+  &.disable {
+    background: $colorPrimary200;
+    color: $colorWhite;
+  }
+
+  &.loading {
+    .loadingIcon {
+      display: block;
+    }
+  }
+
+  &.small {
+    padding: rem(11.5px) rem(20px);
+    @include textButtonSmall;
+  }
+}
+
+.beforeIcon {
+  margin-right: rem(8px);
+}
+
+.afterIcon {
+  margin-left: rem(8px);
+}

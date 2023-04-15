@@ -1,5 +1,5 @@
 import styles from "./index.module.scss";
-import content from "../../../../content/new-arrivals-v1.json";
+import content from "@/content/new-arrivals-v1.json";
 import BookCard from "@/components/blocks/BookCard";
 
 const NewArrivalsSection: React.FunctionComponent = () => {
