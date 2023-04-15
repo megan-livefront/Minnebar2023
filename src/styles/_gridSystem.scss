@@ -6,6 +6,7 @@
   $gutters: calc(#{$gutter} * #{$columnDifference} / #{$maxColumns});
   $columnsDividedColumnNumber: calc(#{$maxColumns} / #{$columnNumber});
   width: calc((100% / #{$columnsDividedColumnNumber}) - #{$gutters});
+  max-width: 100%;
 }
 
 @mixin rowBasics($maxWidth) {

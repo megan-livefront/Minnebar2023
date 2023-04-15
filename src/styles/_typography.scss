@@ -4,7 +4,7 @@
 @mixin textDisplay {
   font-size: rem(80px);
   line-height: rem(100px);
-  letter-spacing: -0.2%;
+  letter-spacing: -0.002em;
   font-family: 'PPTelegraf-UltraBold';
 
   @include desktopAndUp {
@@ -16,7 +16,7 @@
 @mixin textHeading01 {
   font-size: rem(54px);
   line-height: rem(60px);
-  letter-spacing: -1.8%;
+  letter-spacing: -0.018em;
   font-family: 'PPTelegraf-UltraBold';
 
   @include desktopAndUp {
@@ -28,7 +28,7 @@
 @mixin textHeading02 {
   font-size: rem(36px);
   line-height: rem(42px);
-  letter-spacing: -1.5%;
+  letter-spacing: -0.015em;
   font-family: 'PPTelegraf-UltraBold';
 
   @include desktopAndUp {
@@ -40,7 +40,7 @@
 @mixin textHeading03 {
   font-size: rem(25px);
   line-height: rem(32px);
-  letter-spacing: -1.5%;
+  letter-spacing: -0.015em;
   font-family: 'PPTelegraf-UltraBold';
 
   @include desktopAndUp {
@@ -52,7 +52,7 @@
 @mixin textHeading04 {
   font-size: rem(16px);
   line-height: rem(24px);
-  letter-spacing: -1.2%;
+  letter-spacing: -0.012em;
   font-family: 'PPTelegraf-UltraBold';
 
   @include desktopAndUp {
@@ -64,7 +64,7 @@
 @mixin textSubheading01 {
   font-size: rem(16px);
   line-height: rem(24px);
-  letter-spacing: -1.2%;
+  letter-spacing: -0.012em;
   font-family: 'Poppins-SemiBold';
 
   @include desktopAndUp {
@@ -76,7 +76,7 @@
 @mixin textSubheading02 {
   font-size: rem(16px);
   line-height: rem(24px);
-  letter-spacing: -1.5%;
+  letter-spacing: -0.015em;
   font-family: 'Poppins-SemiBold';
 
   @include desktopAndUp {
@@ -88,7 +88,7 @@
 @mixin textSubheading03 {
   font-size: rem(16px);
   line-height: rem(24px);
-  letter-spacing: -1.2%;
+  letter-spacing: -0.012em;
   font-family: 'Poppins-SemiBold';
 }
 
