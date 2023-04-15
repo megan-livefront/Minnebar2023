@@ -35,8 +35,8 @@ const MobileNav: React.FunctionComponent = () => {
 
 const Header: React.FunctionComponent = () => {
   return (
-    <div className={`row-container ${styles.container}`}>
-      <div className={`row ${styles.content}`}>
+    <div className="row-container">
+      <div className="row">
         <div className="col-6-lg col-6-md col-1-sm">
           <img
             className={styles.logo}

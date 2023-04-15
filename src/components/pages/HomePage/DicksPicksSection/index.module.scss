@@ -1,6 +1,7 @@
 @use "../../../../styles/index.scss" as *;
 
 .container {
+  padding: rem(48px) 0 rem(16px);
   background: linear-gradient(
     to bottom,
     $colorBackground 0%,

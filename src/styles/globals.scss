@@ -67,6 +67,14 @@ h4 {
   @include textHeading04;
 }
 
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .subheading1 {
   color: $colorTextSubheading;
 

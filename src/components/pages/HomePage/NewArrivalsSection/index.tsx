@@ -7,7 +7,7 @@ const NewArrivalsSection: React.FunctionComponent = () => {
 
   return (
     <div className={`${styles.container} row-container`}>
-      <div className="row-justify-center">
+      <div className="row">
         <div className={`${styles.headingWrapper} col-12`}>
           <h2>New Arrivals</h2>
         </div>

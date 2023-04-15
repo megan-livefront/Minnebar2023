@@ -1,0 +1,82 @@
+@use "../../../styles/index.scss" as *;
+
+.container {
+  background-color: $colorPrimary500;
+  color: $colorWhite;
+  padding: rem(56px) 0 0;
+}
+
+.content {
+  padding-bottom: rem(96px);
+  flex-direction: column;
+}
+
+.logoWrapper {
+  margin-bottom: rem(32px);
+}
+
+.textAndSocial {
+  display: flex;
+  flex-direction: column;
+}
+
+.marketingBody {
+  margin-bottom: rem(32px);
+}
+
+.socialWrapper {
+  display: flex;
+  gap: rem(24px);
+}
+
+.linkWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32px);
+
+  .linkCategory {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: rem(12px);
+  }
+
+  .linkCategoryHeading {
+    color: $colorWhite;
+  }
+
+  a {
+    color: $colorWhite;
+  }
+}
+
+.copyRight {
+  padding: rem(8px) 0;
+  background-color: $colorPrimary600;
+  color: $colorWhite;
+}
+
+@include tabletAndUp {
+  .content {
+    flex-direction: row;
+  }
+
+  .marketingBody {
+    margin-bottom: rem(48px);
+  }
+
+  .linkWrapper {
+    flex-direction: row;
+    gap: unset;
+
+    .linkCategory {
+      gap: rem(26px);
+    }
+  }
+}
+
+@include desktopAndUp {
+  .marketingBody {
+    margin-bottom: rem(32px);
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "36c481f5-8f76-4172-8584-39102d23do0c",
+  "title": "Book Picks",
+  "urlSlug": "book-picks-v1",
+  "attributes": {
+    "marketingBody": "If you're tired of being brainwashed by the mainstream media and you're ready to dive into a world of half-baked ideas, questionable evidence, and just plain crazy theories, then you've come to the right place. From lizard people to the Illuminati, we've got it all. And don't worry, we won't judge you for wearing your tin foil hat in public.",
+    "copyRight": "©2023 The Tinfoil Hat. All Rights Reserved.",
+    "socialIcons": [
+      {
+        "src": "/assets/images/icons/facebook.svg",
+        "altText": "facebook logo"
+      },
+      {
+        "src": "/assets/images/icons/twitter.svg",
+        "altText": "twitter logo"
+      },
+      {
+        "src": "/assets/images/icons/instagram.svg",
+        "altText": "instagram logo"
+      }
+    ],
+    "linkCategories": [
+      {
+        "title": "Explore",
+        "links": [
+          {
+            "text": "Shop",
+            "href": "/"
+          },
+          {
+            "text": "About",
+            "href": "/"
+          },
+          {
+            "text": "Account",
+            "href": "/"
+          }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          {
+            "text": "FAQ",
+            "href": "/"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "/"
+          },
+          {
+            "text": "The Store",
+            "href": "/"
+          }
+        ]
+      },
+      {
+        "title": "The Store",
+        "links": [
+          {
+            "text": "1100 S Ocean Blv Palm Beach, FL 33480",
+            "href": "/"
+          },
+          {
+            "text": "+1 (561) 832-2600",
+            "href": "/"
+          }
+        ]
+      }
+    ]
+  }
+}

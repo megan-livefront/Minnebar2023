@@ -8,11 +8,6 @@
 
 .navLink {
   margin-left: rem(32px);
-  text-decoration: none;
 
   @include textBodySmall;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
