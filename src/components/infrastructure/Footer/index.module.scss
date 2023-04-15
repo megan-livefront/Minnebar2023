@@ -37,7 +37,6 @@
   .linkCategory {
     display: flex;
     flex-direction: column;
-    width: 30%;
     gap: rem(12px);
   }
 
@@ -72,6 +71,7 @@
 
     .linkCategory {
       gap: rem(26px);
+      width: 30%;
     }
   }
 }
