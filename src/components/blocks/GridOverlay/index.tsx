@@ -21,7 +21,7 @@ const GridOverlay: React.FunctionComponent = () => {
     </div>
   );
   return (
-    <div className="row-container align-center">
+    <div className={`${styles.container} row-container align-center`}>
       {twelveColumnRow}
     </div>
   );

@@ -1,11 +1,20 @@
 @use '../../../styles/index.scss' as *;
 
+.container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
 .overlayRow {
-    position: absolute;
+    height: 100%;
 }
 
 .overlayColumn {
     background: red;
     opacity: 0.1;
-    height: 100vh;
 }
