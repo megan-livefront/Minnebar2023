@@ -1,0 +1,13 @@
+@use "../../../../styles/index.scss" as *;
+
+.container {
+    padding-bottom: rem(100px);
+}
+
+.headingWrapper {
+    padding: rem(96px) 0 rem(40px);
+}
+
+.bookCard {
+    padding-top: rem(32px);
+}

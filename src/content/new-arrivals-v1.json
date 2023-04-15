@@ -1,0 +1,28 @@
+{
+    "id": "36c481f5-8f76-4172-8584-39102d239162",
+    "title": "New Arrivals",
+    "urlSlug": "new-arrivals-v1",
+    "attributes": {
+      "books": [
+        {
+            "imgSrc": "/assets/images/bookCards/bigfoot.png",
+            "title": "Finding Bigfoot",
+            "author": "Brett Maverick",
+            "price": "99.99"
+        },
+        {
+            "imgSrc": "/assets/images/bookCards/lizards.png",
+            "title": "How to Spot a Lizard Person",
+            "author": "Tyler Durden",
+            "price": "99.99"
+        },
+        {
+            "imgSrc": "/assets/images/bookCards/mandela.png",
+            "title": "Oops, Wrong Universe",
+            "author": "Ryan Stubblefield",
+            "price": "99.99"
+        }
+      ]
+    }
+  }
+  

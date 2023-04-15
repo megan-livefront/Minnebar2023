@@ -67,10 +67,16 @@ h4 {
   @include textHeading04;
 }
 
-.subheading {
-  color: $colorTextHeading;
+.subheading1 {
+  color: $colorTextSubheading;
 
   @include textSubheading01;
+}
+
+.subheading3 {
+  color: $colorTextSubheading;
+
+  @include textSubheading03;
 }
 
 .mobile-and-down {
