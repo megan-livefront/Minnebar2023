@@ -1,31 +1,44 @@
 @use "../../../../styles/index.scss" as *;
 
 .container {
-    height: 400px;
-    background: linear-gradient(
-        to bottom,
-        $colorBackground 0%,
-        $colorBackground 60%,
-        $colorPrimary500 60%,
-        $colorPrimary500 100%
-    );
-}
-
-.headingWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background: linear-gradient(
+    to bottom,
+    $colorBackground 0%,
+    $colorBackground 60%,
+    $colorPrimary500 60%,
+    $colorPrimary500 100%
+  );
 }
 
 .introWrapper {
-    background: $colorWhite;
-    padding: rem(32px);
-    margin-top: rem(16px);
+  background: $colorWhite;
+  padding: rem(32px);
+  margin-top: rem(16px);
+}
+
+.headingWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  max-width: 50%;
 }
 
 .booksWrapper {
-    background: $colorTertiary500;
-    display: flex;
-    justify-content: space-between;
+  background: $colorTertiary500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(32px);
+  justify-content: space-between;
+  padding: rem(16px) rem(32px);
+}
+
+@include tabletAndUp {
+  .booksWrapper {
+    flex-direction: row;
     padding: rem(16px) rem(32px);
+  }
 }

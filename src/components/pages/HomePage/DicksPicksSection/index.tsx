@@ -6,12 +6,21 @@ import styles from "./index.module.scss";
 
 const DicksPicksSection: React.FunctionComponent = () => {
   const { books } = content.attributes;
+  const booksToDisplayDesktop = books;
+  const booksToDisplayTabletAndDown = books.slice(0, 3);
+  
+  const getBookPicks = (booksToDisplay: typeof books, className: string) =>
+    booksToDisplay.map((book) => (
+      <div className={`${className} col-4 col-2-sm`}>
+        <BookPick title={book.title} imgSrc={book.imgSrc} price={book.price} />
+      </div>
+    ));
 
   return (
     <div className={`${styles.container} row-container`}>
       <div className="row">
         <div className={`${styles.headingWrapper} col-12`}>
-          <h3>
+          <h3 className={styles.heading}>
             <BlackoutText text="Ridiculous" /> Dick's Picks
           </h3>
           <Button
@@ -42,13 +51,8 @@ const DicksPicksSection: React.FunctionComponent = () => {
       </div>
       <div className="row">
         <div className={`${styles.booksWrapper} col-12`}>
-          {books.map((book) => (
-            <BookPick
-              title={book.title}
-              imgSrc={book.imgSrc}
-              price={book.price}
-            />
-          ))}
+          {getBookPicks(booksToDisplayTabletAndDown, "tablet-and-down")}
+          {getBookPicks(booksToDisplayDesktop, "desktop-and-up")}
         </div>
       </div>
     </div>

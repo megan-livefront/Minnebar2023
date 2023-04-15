@@ -1,0 +1,31 @@
+@use "../../../styles/index.scss" as *;
+
+.container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+
+    .title {
+        margin-bottom: rem(20px);
+    }
+
+    hr {
+        border: rem(1px) solid $colorSecondary600;
+        opacity: .4;
+        position: absolute;
+        bottom: rem(50px);
+        left: 0;
+        width: 90%;
+    }
+
+    .price {
+        margin: rem(20px) 0;
+    }
+
+    img {
+        z-index: 1;
+        height: rem(125px);
+    }
+}

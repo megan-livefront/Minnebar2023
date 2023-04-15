@@ -87,6 +87,14 @@ h4 {
   }
 }
 
+.tablet-and-down {
+  display: inherit;
+
+  @include desktopAndUp {
+    display: none;
+  }
+}
+
 .tablet-and-up {
   display: none;
 
