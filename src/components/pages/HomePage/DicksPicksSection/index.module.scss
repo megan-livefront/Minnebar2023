@@ -5,8 +5,8 @@
   background: linear-gradient(
     to bottom,
     $colorBackground 0%,
-    $colorBackground 60%,
-    $colorPrimary500 60%,
+    $colorBackground 85%,
+    $colorPrimary500 85%,
     $colorPrimary500 100%
   );
 }
@@ -51,6 +51,16 @@
 }
 
 @include tabletAndUp {
+  .container {
+    background: linear-gradient(
+      to bottom,
+      $colorBackground 0%,
+      $colorBackground 70%,
+      $colorPrimary500 70%,
+      $colorPrimary500 100%
+    );
+  }
+
   .booksWrapper {
     flex-direction: row;
     padding: rem(16px) rem(32px);

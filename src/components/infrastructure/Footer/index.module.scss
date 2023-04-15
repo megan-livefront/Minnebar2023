@@ -7,7 +7,7 @@
 }
 
 .content {
-  padding-bottom: rem(96px);
+  padding-bottom: rem(48px);
   flex-direction: column;
 }
 
@@ -59,6 +59,7 @@
 @include tabletAndUp {
   .content {
     flex-direction: row;
+    padding-bottom: rem(96px);
   }
 
   .marketingBody {

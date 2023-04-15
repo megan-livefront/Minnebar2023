@@ -14,7 +14,7 @@ const SearchSection: React.FunctionComponent = () => {
       >
         <div className={`col-7-lg col-12-md col-2-sm ${styles.textContent}`}>
           <div className={styles.searchHeader}>
-            Who needs facts when you've got theories?
+            Ignite your great awakening
           </div>
           <InputField
             placeholder="Search for a title, author, or topic..."

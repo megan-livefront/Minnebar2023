@@ -1,14 +1,26 @@
 @use "../../../../styles/index.scss" as *;
 
-.container {
-    padding-bottom: rem(100px);
-}
-
 .headingWrapper {
-    text-align: center;
-    padding: rem(96px) 0 rem(40px);
+  text-align: center;
+  padding: rem(32px) 0 rem(40px);
 }
 
 .bookCard {
-    padding-top: rem(32px);
+  padding-top: rem(32px);
+}
+
+@include tabletAndUp {
+  .container {
+    padding-bottom: rem(16px);
+  }
+
+  .headingWrapper {
+    padding: rem(96px) 0 rem(40px);
+  }
+}
+
+@include tabletAndUp {
+  .container {
+    padding-bottom: rem(80px);
+  }
 }
