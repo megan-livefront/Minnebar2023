@@ -1,7 +1,7 @@
 import InputField from "@/components/elements/InputField";
 import styles from "./index.module.scss";
 
-export default function SearchSection() {
+const SearchSection: React.FunctionComponent = () => {
   const icon = {
     src: "/assets/images/icons/search.svg",
     altText: "search icon",
@@ -30,3 +30,5 @@ export default function SearchSection() {
     </div>
   );
 }
+
+export default SearchSection

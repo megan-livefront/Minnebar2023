@@ -4,7 +4,7 @@ import Header from "@/components/infrastructure/Header";
 import HeroSection from "./HeroSection";
 import SearchSection from "./SearchSection";
 
-export default function Home() {
+const HomePage: React.FunctionComponent = () => {
   return (
     <>
       {/* <GridOverlay /> */}
@@ -15,3 +15,5 @@ export default function Home() {
     </>
   );
 }
+
+export default HomePage

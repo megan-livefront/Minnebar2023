@@ -16,5 +16,12 @@
   position: absolute;
   width: 30%;
   left: 0;
-  bottom: rem(-24px);
+  bottom: 80%;
+  z-index: 1;
+}
+
+@include desktopAndUp {
+  .floatingImage {
+    bottom: rem(-24px);
+  }
 }

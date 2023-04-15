@@ -26,10 +26,15 @@
 }
 
 @mixin textHeading02 {
-  font-size: rem(48px);
-  line-height: rem(56px);
-  letter-spacing: rem(-1.5px);
+  font-size: rem(36px);
+  line-height: rem(42px);
+  letter-spacing: -1.5%;
   font-family: 'PPTelegraf-UltraBold';
+
+  @include desktopAndUp {
+    font-size: rem(48px);
+    line-height: rem(56px);
+  }
 }
 
 @mixin textHeading03 {
@@ -138,20 +143,4 @@
   line-height: rem(20px);
   letter-spacing: 0;
   font-family: 'Poppins-SemiBold';
-}
-
-@mixin textCaption02 {
-  font-size: rem(14px);
-  line-height: rem(14px);
-  letter-spacing: 0;
-  text-transform: uppercase;
-  font-family: 'Poppins-Regular';
-}
-
-@mixin textCaption03 {
-  font-size: rem(12px);
-  line-height: rem(12px);
-  letter-spacing: 0;
-  text-transform: uppercase;
-  font-family: 'Poppins-Regular';
 }

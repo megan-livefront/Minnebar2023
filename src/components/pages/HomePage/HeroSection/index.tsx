@@ -1,7 +1,7 @@
 import BlackoutText from "@/components/blocks/BlackoutText";
 import styles from "./index.module.scss";
 
-export default function HeroSection() {
+const HeroSection: React.FunctionComponent = () => {
   return (
     <div className="row-container">
       <div className={`row column-reverse-sm ${styles.content}`}>
@@ -22,3 +22,5 @@ export default function HeroSection() {
     </div>
   );
 }
+
+export default HeroSection
