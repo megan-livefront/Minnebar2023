@@ -7,15 +7,15 @@
     "copyRight": "©2023 The Tinfoil Hat. All Rights Reserved.",
     "socialIcons": [
       {
-        "src": "/assets/images/icons/facebook.svg",
+        "src": "/assets/icons/facebook.svg",
         "altText": "facebook logo"
       },
       {
-        "src": "/assets/images/icons/twitter.svg",
+        "src": "/assets/icons/twitter.svg",
         "altText": "twitter logo"
       },
       {
-        "src": "/assets/images/icons/instagram.svg",
+        "src": "/assets/icons/instagram.svg",
         "altText": "instagram logo"
       }
     ],

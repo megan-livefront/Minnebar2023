@@ -8,7 +8,7 @@ const HeroSection: React.FunctionComponent = () => {
         <div className="col-4-lg col-4-md col-12-sm">
           <img
             className={styles.image}
-            src="/assets/images/homePage/heroImage.png"
+            src="/assets/photos/heroImage.png"
             alt=""
           />
         </div>

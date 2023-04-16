@@ -5,19 +5,19 @@
     "attributes": {
       "books": [
         {
-            "imgSrc": "/assets/images/bookCards/bigfoot.png",
+            "imgSrc": "/assets/books/bigfoot.png",
             "title": "Finding Bigfoot",
             "author": "Brett Maverick",
             "price": "99.99"
         },
         {
-            "imgSrc": "/assets/images/bookCards/lizards.png",
+            "imgSrc": "/assets/books/lizards.png",
             "title": "How to Spot a Lizard Person",
             "author": "Tyler Durden",
             "price": "99.99"
         },
         {
-            "imgSrc": "/assets/images/bookCards/mandela.png",
+            "imgSrc": "/assets/books/mandela.png",
             "title": "Oops, Wrong Universe",
             "author": "Ryan Stubblefield",
             "price": "99.99"

@@ -19,7 +19,7 @@ const BookCard: React.FunctionComponent<Props> = ({
       <div className={styles.content}>
         <div className={styles.orangeArch}></div>
         <div className={styles.addToBagWrapper}>
-            <img src="/assets/images/icons/orangeShoppingBag.svg" alt="" />
+            <img src="/assets/icons/orangeShoppingBag.svg" alt="" />
             <span>Add To Bag</span>
         </div>
         <div className={styles.bookInfoWrapper}>

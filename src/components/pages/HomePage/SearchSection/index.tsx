@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 
 const SearchSection: React.FunctionComponent = () => {
   const icon = {
-    src: "/assets/images/icons/search.svg",
+    src: "/assets/icons/search.svg",
     altText: "search icon",
   };
 
@@ -24,7 +24,7 @@ const SearchSection: React.FunctionComponent = () => {
       </div>
       <img
         className={styles.floatingImage}
-        src="/assets/images/homePage/floatingSearchImage.png"
+        src="/assets/photos/floatingSearchImage.png"
         alt="man in tinfoil hat reading"
       />
     </div>

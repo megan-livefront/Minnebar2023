@@ -33,7 +33,7 @@ const Button: React.FunctionComponent<Props> = ({
     >
       <img
         className={`${styles.loadingIcon} ${styles.icon}`}
-        src="/assets/images/icons/loading.svg"
+        src="/assets/icons/loading.svg"
         alt="loading"
       />
       {iconBefore && !isLoading && (

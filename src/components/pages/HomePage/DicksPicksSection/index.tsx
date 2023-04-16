@@ -26,7 +26,7 @@ const DicksPicksSection: React.FunctionComponent = () => {
           <Button
             style="outlined"
             icon={{
-              src: "/assets/images/icons/arrowPrimary.svg",
+              src: "/assets/icons/arrowPrimary.svg",
               altText: "right arrow",
               alignment: "after",
             }}
@@ -46,7 +46,7 @@ const DicksPicksSection: React.FunctionComponent = () => {
           </div>
         </div>
         <div className={`${styles.imgWrapper} col-4`}>
-          <img src="/assets/images/homePage/dick.png" alt="photo of Richard" />
+          <img src="/assets/photos/dick.png" alt="photo of Richard" />
         </div>
       </div>
       <div className="row">

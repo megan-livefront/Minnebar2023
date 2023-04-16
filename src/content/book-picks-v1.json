@@ -5,22 +5,22 @@
   "attributes": {
     "books": [
       {
-        "imgSrc": "/assets/images/bookPicks/chemtrails.png",
+        "imgSrc": "/assets/books/chemtrails.png",
         "title": "How Do Airplanes Make Clouds",
         "price": "99.99"
       },
       {
-        "imgSrc": "/assets/images/bookPicks/flatEarth.png",
+        "imgSrc": "/assets/books/flatEarth.png",
         "title": "Flat. Out. Wrong",
         "price": "99.99"
       },
       {
-        "imgSrc": "/assets/images/bookPicks/moon.png",
+        "imgSrc": "/assets/books/moon.png",
         "title": "Moonsplaining",
         "price": "99.99"
       },
       {
-        "imgSrc": "/assets/images/bookPicks/secretSocieties.png",
+        "imgSrc": "/assets/books/secretSocieties.png",
         "title": "Secret Handshakes and Encounters",
         "price": "99.99"
       }
