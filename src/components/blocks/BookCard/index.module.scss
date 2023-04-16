@@ -2,6 +2,8 @@
 
 .container {
   position: relative;
+  max-width: rem(450px);
+  flex: 1;
 }
 
 .bookCover {

@@ -7,6 +7,8 @@
 
 .bookCard {
   padding-top: rem(32px);
+  display: flex;
+  justify-content: center;
 }
 
 @include tabletAndUp {
