@@ -4,7 +4,7 @@ import BookPick from "@/components/blocks/BookPick";
 import content from "@/content/book-picks-v1.json";
 import styles from "./index.module.scss";
 
-const DicksPicksSection: React.FunctionComponent = () => {
+const RicksPicksSection: React.FunctionComponent = () => {
   const { books } = content.attributes;
   const booksToDisplayDesktop = books;
   const booksToDisplayTabletAndDown = books.slice(0, 3);
@@ -21,7 +21,7 @@ const DicksPicksSection: React.FunctionComponent = () => {
       <div className="row">
         <div className={`${styles.headingWrapper} col-12`}>
           <h3 className={styles.heading}>
-            <BlackoutText text="Ridiculous" /> Dick's Picks
+            <BlackoutText text="Ridiculous" /> Rick's Picks
           </h3>
           <Button
             style="outlined"
@@ -38,7 +38,7 @@ const DicksPicksSection: React.FunctionComponent = () => {
       <div className={`${styles.introWrapper} row`}>
         <div className={`${styles.headingWrapper} col-8`}>
           <div>
-            Welcome to Dick’s Picks, where you can find all of the books the
+            Welcome to Rick’s Picks, where you can find all of the books the
             government doesn't want you to read. This collection of books are
             for those who love to question everything, except their own critical
             thinking skills. If you're ready to take the red pill and dive
@@ -46,7 +46,7 @@ const DicksPicksSection: React.FunctionComponent = () => {
           </div>
         </div>
         <div className={`${styles.imgWrapper} col-4`}>
-          <img src="/assets/photos/dick.png" alt="photo of Richard" />
+          <img src="/assets/photos/rick.png" alt="photo of Richard" />
         </div>
       </div>
       <div className="row">
@@ -59,4 +59,4 @@ const DicksPicksSection: React.FunctionComponent = () => {
   );
 };
 
-export default DicksPicksSection;
+export default RicksPicksSection;
