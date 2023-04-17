@@ -2,7 +2,7 @@ import styles from "./index.module.scss";
 
 const DesktopTabletNav: React.FunctionComponent = () => {
   return (
-    <div className="tablet-and-up">
+    <div className={`${styles.tabletAndUpNav} tablet-and-up`}>
       <a className={styles.navLink} href="/">
         Home
       </a>

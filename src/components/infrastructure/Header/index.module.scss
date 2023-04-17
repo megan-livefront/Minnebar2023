@@ -3,11 +3,18 @@
 .nav {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  padding: rem(40px) 0;
 }
 
 .navLink {
   margin-left: rem(32px);
 
   @include textBodySmall;
+}
+
+@include tabletAndUp {
+  .tabletAndUpNav {
+    display: flex;
+    align-items: center;
+  }
 }
