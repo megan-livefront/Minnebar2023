@@ -15,12 +15,17 @@ const BookCard: React.FunctionComponent<Props> = ({
 }) => {
   return (
     <div className={styles.container}>
-      <img className={styles.bookCover} src={imgSrc} alt={`${title} book cover`} />
       <div className={styles.content}>
-        <div className={styles.orangeArch}></div>
+        <div className={styles.bookCoverWrapper}>
+          <img
+            className={styles.bookCover}
+            src={imgSrc}
+            alt={`${title} book cover`}
+          />
+        </div>
         <div className={styles.addToBagWrapper}>
-            <img src="/assets/icons/orangeShoppingBag.svg" alt="" />
-            <span>Add To Bag</span>
+          <img src="/assets/icons/orangeShoppingBag.svg" alt="" />
+          <span>Add To Bag</span>
         </div>
         <div className={styles.bookInfoWrapper}>
           <div className={styles.nameAndAuthor}>

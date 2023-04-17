@@ -7,22 +7,22 @@
 }
 
 .bookCover {
-  position: absolute;
-  max-width: rem(232px);
-  top: rem(-64px);
-  left: 50%;
-  transform: translate(-50%, 0);
+  width: rem(159px);
+  height: rem(221px);
+  margin-top: rem(-24px);
 }
 
 .content {
   height: rem(420px);
 }
 
-.orangeArch {
-  height: 60%;
+.bookCoverWrapper {
   width: 100%;
   border-radius: rem(168px) rem(168px) 0 0;
   background: $colorTertiary500;
+  display: flex;
+  justify-content: center;
+  padding-left: rem(9px);
 }
 
 .addToBagWrapper {
@@ -56,22 +56,16 @@
   @include textBodySmall;
 }
 
-@include tabletAndUp {
-  .bookCover {
-    left: 54%;
-    max-width: rem(264px);
-    top: rem(-24px);
-  }
-
-  .orangeArch {
-    height: 80%;
-  }
-}
-
 @include desktopAndUp {
+  .container {
+    margin: 0 rem(24px);
+  }
+
+  .bookCoverWrapper {
+    padding: rem(48px) 0 rem(16px);
+  }
+
   .bookCover {
-    left: 50%;
-    max-width: rem(200px);
-    top: rem(48px);
+    top: unset;
   }
 }

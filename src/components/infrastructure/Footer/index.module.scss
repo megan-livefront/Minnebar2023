@@ -80,4 +80,12 @@
   .marketingBody {
     margin-bottom: rem(32px);
   }
+
+  .linkWrapper {
+    gap: rem(32px);
+
+    .linkCategory {
+      margin-left: rem(16px);
+    }
+  }
 }
