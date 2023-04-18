@@ -4,28 +4,25 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  width: 100%;
+  flex-grow: 1;
 
   .bookInfo {
-    flex-grow: 1;
-    height: 100%;
     display: flex;
+    justify-content: flex-end;
     flex-direction: column;
+    flex-grow: 1;
     gap: rem(12px);
     margin-right: rem(-8px);
   }
 
   .title {
-    display: flex;
-    align-items: flex-end;
-    height: 60%;
     margin-right: rem(8px);
   }
 
   hr {
     border: rem(1px) solid $colorSecondary600;
     opacity: 0.4;
-    width: 100%;
+    flex-grow: 1;
   }
 
   img {
