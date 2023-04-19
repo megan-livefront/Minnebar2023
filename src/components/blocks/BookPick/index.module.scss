@@ -2,30 +2,33 @@
 
 .container {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
   flex-grow: 1;
 
   .bookInfo {
     display: flex;
-    justify-content: flex-end;
     flex-direction: column;
+    justify-content: flex-end;
     flex-grow: 1;
     gap: rem(12px);
     margin-right: rem(-8px);
+    padding: rem(4px) 0 rem(8px);
+
+    .title {
+      margin-right: rem(8px);
+    }
+
+    hr {
+      border: rem(1px) solid $colorSecondary600;
+      opacity: 0.4;
+    }
+
+    .price {
+      @include textBodySmall;
+    }
   }
 
-  .title {
-    margin-right: rem(8px);
-  }
-
-  hr {
-    border: rem(1px) solid $colorSecondary600;
-    opacity: 0.4;
-    flex-grow: 1;
-  }
-
-  img {
+  .bookCover {
     z-index: 1;
     height: rem(125px);
   }
