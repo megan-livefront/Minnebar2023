@@ -21,7 +21,7 @@
   }
 }
 
-@include tabletAndUp {
+@include desktopAndUp {
   .container {
     padding-bottom: rem(80px);
   }
