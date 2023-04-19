@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 const GridOverlay: React.FunctionComponent = () => {
   const rows = [...new Array(12)];
   const overlayRows = rows.map(() => (
-    <div className={`col-1-lg col-1-md col-1-sm ${styles.overlayColumn}`}></div>
+    <div className={`col-1 ${styles.overlayColumn}`}></div>
   ));
 
   return (
