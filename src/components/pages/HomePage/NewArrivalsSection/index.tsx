@@ -14,7 +14,7 @@ const NewArrivalsSection: React.FunctionComponent = () => {
       </div>
       <div className="row">
         {books.map((book) => (
-          <div className={`${styles.bookCard} col-4-lg col-4-md col-12-sm`}>
+          <div className={`${styles.bookCard} col-4 col-12-sm`}>
             <BookCard
               imgSrc={book.imgSrc}
               title={book.title}
