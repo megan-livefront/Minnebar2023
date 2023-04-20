@@ -32,7 +32,7 @@ const BookCard: React.FunctionComponent<Props> = ({
             <span className="subheading3">{title}</span>
             <span className={styles.author}>{author}</span>
           </div>
-          <div className={`${styles.price} subheading3`}>{price}</div>
+          <div className={styles.price}>{price}</div>
         </div>
       </div>
     </div>

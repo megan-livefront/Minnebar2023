@@ -54,6 +54,8 @@
 
 .price {
   color: $colorSecondary500;
+
+  @include textSubheading03;
 }
 
 @include desktopAndUp {
