@@ -37,7 +37,7 @@ const RicksPicksSection: React.FunctionComponent = () => {
       </div>
       <div className={`${styles.introWrapper} row`}>
         <div className={`${styles.headingWrapper} col-8`}>
-          <div>
+          <div className={styles.bodyText}>
             Welcome to Rick’s Picks, where you can find all of the books the
             government doesn't want you to read. This collection of books are
             for those who love to question everything, except their own critical

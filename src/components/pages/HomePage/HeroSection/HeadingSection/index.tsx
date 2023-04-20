@@ -12,7 +12,7 @@ const HeadingSection: React.FunctionComponent = () => {
               alt=""
             />
           </div>
-          <div className={`col-8-lg col-8-md col-12-sm ${styles.textContent}`}>
+          <div className={`col-7-lg col-7-md col-12-sm ${styles.textContent}`}>
             <h1>
               Unlocking the <BlackoutText text="possibly" /> true secrets of the{" "}
               <BlackoutText text="made up" /> universe:
