@@ -1,9 +1,17 @@
 @use "../../../styles/index.scss" as *;
 
+.container {
+  background-color: $colorGray00;
+}
+
 .nav {
   display: flex;
   justify-content: flex-end;
   padding: rem(40px) 0;
+
+  a {
+    color: $colorGray500;
+  }
 }
 
 .navLink {

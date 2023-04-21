@@ -17,7 +17,7 @@ const DesktopTabletNav: React.FunctionComponent = () => {
       </a>
       <a className={styles.navLink} href="/">
         <img
-          src="/assets/icons/shoppingBagIcon.svg"
+          src="/assets/icons/shoppingBag.svg"
           alt="Shopping bag"
         />
       </a>
@@ -35,7 +35,7 @@ const MobileNav: React.FunctionComponent = () => {
 
 const Header: React.FunctionComponent = () => {
   return (
-    <div className="row-container">
+    <div className={`${styles.container} row-container`}>
       <div className="row">
         <div className="col-6-lg col-6-md col-1-sm">
           <img

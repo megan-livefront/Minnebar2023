@@ -2,7 +2,7 @@
 
 .container {
   background-color: $colorPrimary500;
-  color: $colorWhite;
+  color: $colorGray00;
   padding: rem(56px) 0 0;
 }
 
@@ -41,18 +41,18 @@
   }
 
   .linkCategoryHeading {
-    color: $colorWhite;
+    color: $colorGray00;
   }
 
   a {
-    color: $colorWhite;
+    color: $colorGray00;
   }
 }
 
 .copyRight {
   padding: rem(8px) 0;
   background-color: $colorPrimary600;
-  color: $colorWhite;
+  color: $colorGray00;
 }
 
 @include tabletAndUp {
