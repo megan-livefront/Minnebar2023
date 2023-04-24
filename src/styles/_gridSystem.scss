@@ -87,17 +87,17 @@
 }
 
 @mixin gridMobile {
-  $smallGridWidth: calc(100% - #{$mobileGridMargin} * 2);
-  @include grid($smallGridWidth, 2, rem(24px), "sm");
+  $smallGridMaxWidth: calc(100% - #{$mobileGridMargin} * 2);
+  @include grid($smallGridMaxWidth, 2, rem(24px), "sm");
 }
 
 @mixin gridTablet {
-  $tabletGridWidth: calc(100% - #{$tabletGridMargin} * 2);
-  @include grid($tabletGridWidth, 12, rem(32px), "md");
+  $tabletGridMaxWidth: calc(100% - #{$tabletGridMargin} * 2);
+  @include grid($tabletGridMaxWidth, 12, rem(32px), "md");
 }
 
 @mixin gridDesktop {
-  @include grid($desktopRems, 12, rem(32px), "lg");
+  @include grid($desktopGridMaxWidth, 12, rem(32px), "lg");
 }
 
 .row-container {

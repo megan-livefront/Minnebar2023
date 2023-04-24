@@ -13,15 +13,15 @@ $standardFontSize: 16px;
   @return (math.div($pixels, $standardFontSize)) * 1rem;
 }
 
-$tabletRems: 48rem;
-$desktopRems: 72.5rem;
+$tabletGridMaxWidth: 48rem;
+$desktopGridMaxWidth: 72.5rem;
 
 $mobileGridMargin: 1.5rem;
 $tabletGridMargin: 3rem;
 $desktopGridMargin: 3rem;
 
-$tabletBreakpointPx: remToPx($tabletRems + 2 * $tabletGridMargin);
-$desktopBreakpointPx: remToPx($desktopRems + 2 * $desktopGridMargin);
+$tabletBreakpointPx: remToPx($tabletGridMaxWidth + 2 * $tabletGridMargin);
+$desktopBreakpointPx: remToPx($desktopGridMaxWidth + 2 * $desktopGridMargin);
 $mobileMaxBreakpointPx: $tabletBreakpointPx - 1px;
 
 @mixin tabletAndUp {
