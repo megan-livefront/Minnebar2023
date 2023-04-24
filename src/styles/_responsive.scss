@@ -23,9 +23,9 @@ $mobileGridMarginPx: remToPx($mobileGridMargin);
 $tabletGridMarginPx: remToPx($tabletGridMargin);
 $desktopGridMarginPx: remToPx($desktopGridMargin);
 
-$tabletMinWidth: 864px;
-$desktopMinWidth: 1256px;
-$mobileMaxWidth: 863px;
+$tabletMinWidthPx: 864px;
+$desktopMinWidthPx: 1256px;
+$mobileMaxWidthPx: 863px;
 
 // Convert pixel values to rems
 // (Assumes 16px default font-size)
@@ -34,31 +34,31 @@ $mobileMaxWidth: 863px;
 }
 
 @mixin tabletAndUp {
-  @media only screen and (min-width: $tabletMinWidth) {
+  @media only screen and (min-width: rem($tabletMinWidthPx - 1px)) {
     @content;
   }
 }
 
 @mixin desktopAndUp {
-  @media only screen and (min-width: $desktopMinWidth) {
+  @media only screen and (min-width: rem($desktopMinWidthPx - 1px)) {
     @content;
   }
 }
 
 @mixin mobileOnly {
-  @media only screen and (max-width: $mobileMaxWidth) {
+  @media only screen and (max-width: rem($mobileMaxWidthPx)) {
     @content;
   }
 }
 
 @mixin tabletOnly {
-  @media only screen and (min-width: $tabletMinWidth) and (max-width: ($desktopMinWidth - 1px)) {
+  @media only screen and (min-width: rem($tabletMinWidthPx)) and (max-width: rem($desktopMinWidthPx - 1px)) {
     @content;
   }
 }
 
 @mixin desktopOnly {
-  @media only screen and (min-width: $desktopMinWidth) {
+  @media only screen and (min-width: rem($desktopMinWidthPx)) {
     @content;
   }
 }
