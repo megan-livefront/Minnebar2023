@@ -2,9 +2,6 @@
 
 $standardFontSize: 16px;
 
-$tabletRems: 48rem;
-$desktopRems: 72.5rem;
-
 // Convert rems to pixels.
 @function remToPx($rems) {
   @return math.div($rems, 1rem) * $standardFontSize;
@@ -16,40 +13,43 @@ $desktopRems: 72.5rem;
   @return (math.div($pixels, $standardFontSize)) * 1rem;
 }
 
+$tabletRems: 48rem;
+$desktopRems: 72.5rem;
+
 $mobileGridMargin: 1.5rem;
 $tabletGridMargin: 3rem;
 $desktopGridMargin: 3rem;
 
-$tabletMinWidthPx: 864px;
-$desktopMinWidthPx: 1256px;
-$mobileMaxWidthPx: 863px;
+$tabletBreakpointPx: remToPx($tabletRems + 2 * $tabletGridMargin);
+$desktopBreakpointPx: remToPx($desktopRems + 2 * $desktopGridMargin);
+$mobileMaxBreakpointPx: $tabletBreakpointPx - 1px;
 
 @mixin tabletAndUp {
-  @media only screen and (min-width: rem($tabletMinWidthPx - 1px)) {
+  @media only screen and (min-width: rem($tabletBreakpointPx - 1px)) {
     @content;
   }
 }
 
 @mixin desktopAndUp {
-  @media only screen and (min-width: rem($desktopMinWidthPx - 1px)) {
+  @media only screen and (min-width: rem($desktopBreakpointPx - 1px)) {
     @content;
   }
 }
 
 @mixin mobileOnly {
-  @media only screen and (max-width: rem($mobileMaxWidthPx)) {
+  @media only screen and (max-width: rem($mobileMaxBreakpointPx)) {
     @content;
   }
 }
 
 @mixin tabletOnly {
-  @media only screen and (min-width: rem($tabletMinWidthPx)) and (max-width: rem($desktopMinWidthPx - 1px)) {
+  @media only screen and (min-width: rem($tabletBreakpointPx)) and (max-width: rem($desktopBreakpointPx - 1px)) {
     @content;
   }
 }
 
 @mixin desktopOnly {
-  @media only screen and (min-width: rem($desktopMinWidthPx)) {
+  @media only screen and (min-width: rem($desktopBreakpointPx)) {
     @content;
   }
 }
