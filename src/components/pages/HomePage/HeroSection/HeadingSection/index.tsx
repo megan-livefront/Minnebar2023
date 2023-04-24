@@ -17,7 +17,7 @@ const HeadingSection: React.FunctionComponent = () => {
               Unlocking the <BlackoutText text="possibly" /> true secrets of the{" "}
               <BlackoutText text="made up" /> universe:
             </h1>
-            <span className="subheading1">
+            <span className={`${styles.subheading} subheading1`}>
               One <BlackoutText text="baseless" /> book at a time
             </span>
           </div>

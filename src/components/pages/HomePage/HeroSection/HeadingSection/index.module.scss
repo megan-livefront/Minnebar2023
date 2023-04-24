@@ -14,6 +14,11 @@
   max-width: 100%;
   margin-bottom: rem(-10px);
   height: fit-content;
+  margin-top: rem(32px);
+}
+
+.subheading {
+  margin-top: rem(16px);
 }
 
 @include tabletAndUp {
@@ -21,8 +26,7 @@
     flex-direction: row;
   }
 
-  .searchSection {
-    background: $colorSecondary500;
-    padding: rem(32px) 0;
+  .image {
+    margin-top: 0;
   }
 }
