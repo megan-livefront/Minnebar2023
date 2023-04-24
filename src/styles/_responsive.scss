@@ -5,33 +5,24 @@ $standardFontSize: 16px;
 $tabletRems: 48rem;
 $desktopRems: 72.5rem;
 
-/**
- * Convert rems to pixels.
- */
+// Convert rems to pixels.
 @function remToPx($rems) {
   @return math.div($rems, 1rem) * $standardFontSize;
 }
-
-$tabletPixels: remToPx($tabletRems);
-$desktopPixels: remToPx($desktopRems);
-
-$mobileGridMargin: 1.5rem;
-$tabletGridMargin: 3rem;
-$desktopGridMargin: 3rem;
-
-$mobileGridMarginPx: remToPx($mobileGridMargin);
-$tabletGridMarginPx: remToPx($tabletGridMargin);
-$desktopGridMarginPx: remToPx($desktopGridMargin);
-
-$tabletMinWidthPx: 864px;
-$desktopMinWidthPx: 1256px;
-$mobileMaxWidthPx: 863px;
 
 // Convert pixel values to rems
 // (Assumes 16px default font-size)
 @function rem($pixels) {
   @return (math.div($pixels, $standardFontSize)) * 1rem;
 }
+
+$mobileGridMargin: 1.5rem;
+$tabletGridMargin: 3rem;
+$desktopGridMargin: 3rem;
+
+$tabletMinWidthPx: 864px;
+$desktopMinWidthPx: 1256px;
+$mobileMaxWidthPx: 863px;
 
 @mixin tabletAndUp {
   @media only screen and (min-width: rem($tabletMinWidthPx - 1px)) {
