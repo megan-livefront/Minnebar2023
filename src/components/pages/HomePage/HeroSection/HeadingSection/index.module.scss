@@ -5,9 +5,15 @@
   margin: rem(48px) 0 0;
 }
 
+.imageWrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
 .image {
   max-width: 100%;
   margin-bottom: rem(-10px);
+  height: fit-content;
 }
 
 @include tabletAndUp {

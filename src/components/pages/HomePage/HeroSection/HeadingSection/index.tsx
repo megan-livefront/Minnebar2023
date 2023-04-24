@@ -5,7 +5,7 @@ const HeadingSection: React.FunctionComponent = () => {
   return (
     <div className="row-container">
         <div className={`row column-reverse-sm ${styles.content}`}>
-          <div className="col-4-lg col-4-md col-12-sm">
+          <div className={`${styles.imageWrapper} col-4-lg col-4-md col-12-sm`}>
             <img
               className={styles.image}
               src="/assets/photos/heroImage.png"
