@@ -23,27 +23,21 @@ const Button: React.FunctionComponent<Props> = ({
   status,
 }) => {
   const isLoading = status === "loading";
-  const iconBefore = icon && icon.alignment === "before";
-  const iconAfter = icon && icon.alignment === "after";
+  const iconPlacementClass = icon && styles[`icon-${icon.alignment}`];
   const sizeClass = smallSize ? styles.small : "";
   const statusClass = status ? styles[status] : "";
 
   return (
     <button
-      className={`${styles.container} ${styles[style]} ${statusClass} ${sizeClass}`}
+      className={`${styles.container} ${styles[style]} ${statusClass} ${sizeClass} ${iconPlacementClass}`}
     >
       <img
         className={`${styles.loadingIcon} ${styles.icon}`}
         src="/assets/icons/loading.svg"
         alt="loading"
       />
-      {iconBefore && !isLoading && (
-        <img className={styles.beforeIcon} src={icon.src} alt={icon.altText} />
-      )}
+      {icon && !isLoading && <img src={icon.src} alt={icon.altText} />}
       {children}
-      {iconAfter && (
-        <img className={styles.afterIcon} src={icon.src} alt={icon.altText} />
-      )}
     </button>
   );
 };

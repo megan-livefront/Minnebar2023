@@ -16,6 +16,7 @@
   justify-content: center;
   border: rem(1.5px) solid $colorPrimary500;
   cursor: pointer;
+  gap: spaceXs();
 
   @include textButtonRegular;
 
@@ -34,6 +35,14 @@
     color: $colorPrimary500;
   }
 
+  &.icon-before {
+    flex-direction: row;
+  }
+
+  &.icon-after {
+    flex-direction: row-reverse;
+  }
+
   &.disabled {
     background: $colorPrimary200;
     color: $colorGray00;
@@ -49,12 +58,4 @@
     padding: rem(11.5px) rem(20px);
     @include textButtonSmall;
   }
-}
-
-.beforeIcon {
-  margin-right: rem(8px);
-}
-
-.afterIcon {
-  margin-left: rem(8px);
 }
