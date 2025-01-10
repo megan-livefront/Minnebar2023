@@ -31,7 +31,7 @@ const Footer: React.FunctionComponent = () => {
           <section
             className={`${styles.linksSection} col-6-lg col-12-md col-2-sm`}
           >
-            {linkCategories.map((category, index) => (
+            {linkCategories.map((category) => (
               <div className={styles.linkCategoryBlock}>
                 <h3 className="subheading3">{category.title}</h3>
                 <div className={styles.categoryLinks}>
