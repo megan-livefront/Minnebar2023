@@ -32,3 +32,7 @@
 @function spaceXxxl() {
   @return fluid(80px, 240px);
 }
+
+@function spaceContentMargin() {
+  @return fluid(48px, 24px);
+}

@@ -16,7 +16,7 @@
 }
 
 .logoWrapper {
-  margin-bottom: rem(32px);
+  margin-bottom: spaceL();
 }
 
 .textAndSocial {
@@ -30,7 +30,7 @@
 
 .socialWrapper {
   display: flex;
-  gap: rem(24px);
+  gap: spaceL();
 }
 
 .linksSection {
