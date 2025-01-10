@@ -18,15 +18,17 @@
   margin-top: rem(10px);
 }
 
-.navLink {
-  margin-left: rem(32px);
-
-  @include textBodySmall;
-}
-
-@include tabletAndUp {
-  .tabletAndUpNav {
+.tabletAndUpNav {
+  @include tabletAndUp {
     display: flex;
     align-items: center;
+    gap: spaceM();
   }
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+
+  @include textBodySmall;
 }
