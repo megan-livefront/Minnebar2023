@@ -5,7 +5,7 @@
   font-size: rem(80px);
   line-height: rem(100px);
   letter-spacing: -0.002em;
-  font-family: 'PPTelegraf-UltraBold';
+  font-family: "PPTelegraf-UltraBold";
 
   @include desktopAndUp {
     font-size: rem(160px);
@@ -17,7 +17,7 @@
   font-size: rem(54px);
   line-height: rem(60px);
   letter-spacing: -0.018em;
-  font-family: 'PPTelegraf-UltraBold';
+  font-family: "PPTelegraf-UltraBold";
 
   @include desktopAndUp {
     font-size: rem(72px);
@@ -29,7 +29,7 @@
   font-size: rem(36px);
   line-height: rem(42px);
   letter-spacing: -0.015em;
-  font-family: 'PPTelegraf-UltraBold';
+  font-family: "PPTelegraf-UltraBold";
 
   @include desktopAndUp {
     font-size: rem(48px);
@@ -41,7 +41,7 @@
   font-size: rem(25px);
   line-height: rem(32px);
   letter-spacing: -0.015em;
-  font-family: 'PPTelegraf-UltraBold';
+  font-family: "PPTelegraf-UltraBold";
 
   @include desktopAndUp {
     font-size: rem(40px);
@@ -53,7 +53,7 @@
   font-size: rem(16px);
   line-height: rem(24px);
   letter-spacing: -0.012em;
-  font-family: 'PPTelegraf-UltraBold';
+  font-family: "PPTelegraf-UltraBold";
 
   @include desktopAndUp {
     font-size: rem(24px);
@@ -65,7 +65,7 @@
   font-size: rem(16px);
   line-height: rem(24px);
   letter-spacing: -0.012em;
-  font-family: 'Poppins-SemiBold';
+  font-family: "Poppins-SemiBold";
 
   @include desktopAndUp {
     font-size: rem(24px);
@@ -77,7 +77,7 @@
   font-size: rem(16px);
   line-height: rem(24px);
   letter-spacing: -0.015em;
-  font-family: 'Poppins-SemiBold';
+  font-family: "Poppins-SemiBold";
 
   @include desktopAndUp {
     font-size: rem(20px);
@@ -89,14 +89,14 @@
   font-size: rem(16px);
   line-height: rem(24px);
   letter-spacing: -0.012em;
-  font-family: 'Poppins-SemiBold';
+  font-family: "Poppins-SemiBold";
 }
 
 @mixin textBodyLarge {
   font-size: rem(16px);
   line-height: rem(24px);
   letter-spacing: 0;
-  font-family: 'Poppins-Light';
+  font-family: "Poppins-Light";
 
   @include desktopAndUp {
     font-size: rem(18px);
@@ -108,28 +108,28 @@
   font-size: rem(16px);
   line-height: rem(24px);
   letter-spacing: 0;
-  font-family: 'Poppins-Light';
+  font-family: "Poppins-Light";
 }
 
 @mixin textBodySmall {
   font-size: rem(14px);
   line-height: rem(20px);
   letter-spacing: 0;
-  font-family: 'Poppins-Light';
+  font-family: "Poppins-Light";
 }
 
 @mixin textBodyTiny {
   font-size: rem(12px);
   line-height: rem(16px);
   letter-spacing: 0;
-  font-family: 'Poppins-Light';
+  font-family: "Poppins-Light";
 }
 
 @mixin textButtonRegular {
   font-size: rem(14px);
   line-height: rem(20px);
   letter-spacing: 0;
-  font-family: 'Poppins-SemiBold';
+  font-family: "Poppins-Regular";
 
   @include desktopAndUp {
     font-size: rem(17px);
@@ -141,5 +141,5 @@
   font-size: rem(14px);
   line-height: rem(20px);
   letter-spacing: 0;
-  font-family: 'Poppins-SemiBold';
+  font-family: "Poppins-SemiBold";
 }
