@@ -4,6 +4,10 @@
   position: relative;
   max-width: rem(450px);
   flex: 1;
+
+  @include desktopAndUp {
+    margin: 0 spaceM();
+  }
 }
 
 .bookCover {
@@ -59,10 +63,6 @@
 }
 
 @include desktopAndUp {
-  .container {
-    margin: 0 rem(24px);
-  }
-
   .bookCoverWrapper {
     padding: rem(48px) 0 rem(16px);
   }

@@ -1,0 +1,33 @@
+@use "functions" as *;
+
+@function spaceXxs() {
+  @return rem(4px);
+}
+
+@function spaceXs() {
+  @return rem(8px);
+}
+
+@function spaceS() {
+  @return fluid(12px, 16px);
+}
+
+@function spaceM() {
+  @return fluid(16px, 24px);
+}
+
+@function spaceL() {
+  @return fluid(24px, 40px);
+}
+
+@function spaceXl() {
+  @return fluid(40px, 80px);
+}
+
+@function spaceXxl() {
+  @return fluid(72px, 160px);
+}
+
+@function spaceXxxl() {
+  @return fluid(80px, 240px);
+}

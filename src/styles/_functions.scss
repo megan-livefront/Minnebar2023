@@ -1,0 +1,43 @@
+@use "sass:math";
+@use "responsive" as *;
+
+// Remove units from a value
+@function stripUnits($value) {
+  @return math.div($value, ($value * 0 + 1));
+}
+
+// Create a fluid style that scales between a min and max value using clamp.
+// Inputs are in pixels but will internally be converted to rems.
+// Based off of:
+// - https://fluidtypography.com/#app-get-started
+// - https://css-tricks.com/snippets/css/fluid-typography/
+// - https://www.smashingmagazine.com/2022/10/fluid-typography-clamp-sass-functions/
+@function fluid($minPixels, $maxPixels) {
+  // Breakpoints for the min and max values in pixels
+  // Remove units so they're not taken into account in the math
+  $maxBreakpoint: stripUnits(remToPx($breakpointFluidMax));
+  $minBreakpoint: stripUnits(
+    remToPx($breakpointFluidMin)
+  ); // Remove units so they're not taken into account in the math
+
+  // Calculate the slope of the line between the min and max values
+  $slope: math.div(
+    stripUnits($maxPixels) - stripUnits($minPixels),
+    $maxBreakpoint - $minBreakpoint
+  );
+
+  $slopeAsViewportUnit: $slope * 100;
+
+  // Calculate the y-intercept of the line, converted to rems
+  $intercept: rem($minPixels - $slope * $minBreakpoint);
+
+  $minRems: rem($minPixels);
+  $maxRems: rem($maxPixels);
+
+  // Return the fluid style with CSS Clamp
+  @return clamp(
+    #{$minRems},
+    #{$intercept} + #{$slopeAsViewportUnit}vw,
+    #{$maxRems}
+  );
+}
