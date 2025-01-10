@@ -1,28 +1,17 @@
 @use "../../../../styles/index.scss" as *;
 
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: spaceL();
+  padding: spaceXl() 0;
+}
+
 .headingWrapper {
   text-align: center;
-  padding: rem(32px) 0 rem(40px);
 }
 
 .bookCard {
-  padding-top: rem(32px);
   display: flex;
   justify-content: center;
-}
-
-@include tabletAndUp {
-  .container {
-    padding-bottom: rem(16px);
-  }
-
-  .headingWrapper {
-    padding: rem(96px) 0 rem(40px);
-  }
-}
-
-@include desktopAndUp {
-  .container {
-    padding-bottom: rem(80px);
-  }
 }

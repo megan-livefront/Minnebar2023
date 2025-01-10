@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 
 const HeadingSection: React.FunctionComponent = () => {
   return (
-    <div className="row-container">
+    <section className="row-container">
       <div className={`row column-reverse-sm ${styles.content}`}>
         <div className={`${styles.imageWrapper} col-4-lg col-4-md col-2-sm`}>
           <img
@@ -22,7 +22,7 @@ const HeadingSection: React.FunctionComponent = () => {
           </span>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

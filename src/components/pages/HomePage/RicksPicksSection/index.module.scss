@@ -1,7 +1,7 @@
 @use "../../../../styles/index.scss" as *;
 
 .container {
-  padding: rem(48px) 0 rem(16px);
+  padding: spaceL() 0 spaceM();
   background: linear-gradient(
     to bottom,
     $colorBackground 0%,
@@ -9,12 +9,22 @@
     $colorPrimary500 85%,
     $colorPrimary500 100%
   );
+
+  @include tabletAndUp {
+    background: linear-gradient(
+      to bottom,
+      $colorBackground 0%,
+      $colorBackground 70%,
+      $colorPrimary500 70%,
+      $colorPrimary500 100%
+    );
+  }
 }
 
 .introWrapper {
   background: $colorGray00;
-  padding: rem(32px);
-  margin-top: rem(16px);
+  padding: spaceL();
+  margin-top: spaceS();
 }
 
 .headingWrapper {
@@ -34,6 +44,17 @@
     left: 50%;
     transform: translate(-50%, 0);
   }
+
+  @include tabletAndUp {
+    height: auto;
+
+    img {
+      height: auto;
+      left: unset;
+      transform: none;
+      width: 80%;
+    }
+  }
 }
 
 .heading {
@@ -49,35 +70,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: rem(32px);
+  gap: spaceM();
   justify-content: space-between;
-  padding: rem(16px) rem(32px);
-}
+  padding: spaceS() spaceL();
 
-@include tabletAndUp {
-  .container {
-    background: linear-gradient(
-      to bottom,
-      $colorBackground 0%,
-      $colorBackground 70%,
-      $colorPrimary500 70%,
-      $colorPrimary500 100%
-    );
-  }
-
-  .booksWrapper {
+  @include tabletAndUp {
     flex-direction: row;
-    padding: rem(16px) rem(32px);
-  }
-
-  .imgWrapper {
-    height: auto;
-
-    img {
-      height: auto;
-      left: unset;
-      transform: none;
-      width: 80%;
-    }
+    gap: spaceL();
   }
 }
