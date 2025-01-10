@@ -28,7 +28,9 @@ const Footer: React.FunctionComponent = () => {
             <div className={styles.marketingBody}>{marketingBody}</div>
             <div className="desktop-and-up">{socialSection}</div>
           </div>
-          <div className={`${styles.linkWrapper} col-6-lg col-12-md col-2-sm`}>
+          <section
+            className={`${styles.linksSection} col-6-lg col-12-md col-2-sm`}
+          >
             {linkCategories.map((category, index) => (
               <div className={styles.linkCategoryBlock}>
                 <h3 className="subheading3">{category.title}</h3>
@@ -41,7 +43,7 @@ const Footer: React.FunctionComponent = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </section>
           <div className="tablet-and-down">{socialSection}</div>
         </div>
       </div>

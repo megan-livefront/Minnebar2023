@@ -33,13 +33,14 @@
   gap: rem(24px);
 }
 
-.linkWrapper {
-  display: flex;
-  flex-direction: column;
+.linksSection {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: spaceXl();
 
   @include tabletAndUp {
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: spaceL();
   }
 }
@@ -52,19 +53,17 @@
   h3 {
     color: $colorGray00;
   }
-
-  @include tabletAndUp {
-    width: 30%;
-  }
 }
 
 .categoryLinks {
   display: flex;
   flex-direction: column;
   gap: spaceS();
+  @include textBodySmall;
 
   a {
     color: $colorGray00;
+    max-width: rem(150px);
   }
 }
 
