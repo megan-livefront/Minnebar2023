@@ -1,3 +1,4 @@
+import Button from "../../elements/Button";
 import styles from "./index.module.scss";
 
 type Props = {
@@ -23,10 +24,16 @@ const BookCard: React.FunctionComponent<Props> = ({
             alt={`${title} book cover`}
           />
         </div>
-        <div className={styles.addToBagWrapper}>
-          <img src="/assets/icons/orangeShoppingBag.svg" alt="" />
+        <Button
+          style="solid"
+          icon={{
+            src: "/assets/icons/orangeShoppingBag.svg",
+            altText: "",
+            alignment: "before",
+          }}
+        >
           <span>Add To Bag</span>
-        </div>
+        </Button>
         <div className={styles.bookInfoWrapper}>
           <div className={styles.nameAndAuthor}>
             <span className="subheading3">{title}</span>

@@ -12,7 +12,7 @@ type Props = {
   style: "solid" | "outlined";
   smallSize?: boolean;
   icon?: Icon;
-  status?: "loading" | "disable" | "normal";
+  status?: "loading" | "disabled";
 };
 
 const Button: React.FunctionComponent<Props> = ({
@@ -20,16 +20,17 @@ const Button: React.FunctionComponent<Props> = ({
   style,
   smallSize = false,
   icon,
-  status = "normal",
+  status,
 }) => {
   const isLoading = status === "loading";
   const iconBefore = icon && icon.alignment === "before";
   const iconAfter = icon && icon.alignment === "after";
-  const sizeClass = smallSize ? styles.small : ''
+  const sizeClass = smallSize ? styles.small : "";
+  const statusClass = status ? styles[status] : "";
 
   return (
     <button
-      className={`${styles.container} ${styles[style]} ${styles[status]} ${sizeClass}`}
+      className={`${styles.container} ${styles[style]} ${statusClass} ${sizeClass}`}
     >
       <img
         className={`${styles.loadingIcon} ${styles.icon}`}

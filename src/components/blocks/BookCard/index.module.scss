@@ -10,10 +10,19 @@
   }
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
 .bookCover {
   width: rem(159px);
   height: rem(221px);
   margin-top: rem(-24px);
+
+  @include desktopAndUp {
+    top: unset;
+  }
 }
 
 .bookCoverWrapper {
@@ -23,26 +32,16 @@
   display: flex;
   justify-content: center;
   padding-left: rem(9px);
-}
 
-.addToBagWrapper {
-  background: $colorPrimary500;
-  color: $colorGray00;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: rem(14px) 0;
-
-  img {
-    width: rem(24px);
-    margin-right: rem(12px);
+  @include desktopAndUp {
+    padding: spaceL() 0 spaceS();
   }
 }
 
 .bookInfoWrapper {
   display: flex;
   justify-content: space-between;
-  padding: rem(16px);
+  padding: spaceS();
 }
 
 .nameAndAuthor {
@@ -60,14 +59,4 @@
   color: $colorSecondary500;
 
   @include textSubheading03;
-}
-
-@include desktopAndUp {
-  .bookCoverWrapper {
-    padding: rem(48px) 0 rem(16px);
-  }
-
-  .bookCover {
-    top: unset;
-  }
 }

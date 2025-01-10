@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: center;
   border: rem(1.5px) solid $colorPrimary500;
+  cursor: pointer;
 
   @include textButtonRegular;
 
@@ -33,7 +34,7 @@
     color: $colorPrimary500;
   }
 
-  &.disable {
+  &.disabled {
     background: $colorPrimary200;
     color: $colorGray00;
   }

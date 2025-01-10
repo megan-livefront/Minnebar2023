@@ -1,4 +1,5 @@
 @use "functions" as *;
+@use "responsive" as *;
 
 @function spaceXxs() {
   @return rem(4px);

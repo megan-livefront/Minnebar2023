@@ -23,7 +23,7 @@ $animationSpeed: 40s;
   .slideTrack {
     animation: scroll $animationSpeed linear infinite;
     display: flex;
-    gap: rem(64px);
+    gap: spaceL();
     width: fit-content;
   }
 
@@ -33,9 +33,6 @@ $animationSpeed: 40s;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    img {
-        margin-right: rem(8px);
-    }
+    gap: rem(8px);
   }
 }
