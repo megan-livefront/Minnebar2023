@@ -18,7 +18,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.60.0",
-    "typescript": "5.0.2",
+    "sass-loader": "^10.1.1",
     "stylelint": "^13.0.0",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-rational-order": "^0.1.2",
@@ -26,6 +26,6 @@
     "stylelint-order": "^4.0.0",
     "stylelint-prettier": "^1.1.2",
     "stylelint-scss": "^3.13.0",
-    "sass-loader": "^10.1.1"
+    "typescript": "5.0.2"
   }
 }
