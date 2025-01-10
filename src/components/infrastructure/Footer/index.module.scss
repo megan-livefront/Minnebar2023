@@ -3,12 +3,16 @@
 .container {
   background-color: $colorPrimary500;
   color: $colorGray00;
-  padding: rem(56px) 0 0;
+  padding: spaceL() 0 spaceXl();
 }
 
 .content {
-  padding-bottom: rem(48px);
   flex-direction: column;
+  gap: spaceXl();
+
+  @include tabletAndUp {
+    flex-direction: row;
+  }
 }
 
 .logoWrapper {
@@ -18,10 +22,10 @@
 .textAndSocial {
   display: flex;
   flex-direction: column;
-}
-
-.marketingBody {
-  margin-bottom: rem(32px);
+  gap: spaceM();
+  padding-right: spaceS();
+  flex-basis: 40%;
+  flex-grow: 1;
 }
 
 .socialWrapper {
@@ -32,17 +36,32 @@
 .linkWrapper {
   display: flex;
   flex-direction: column;
-  gap: rem(32px);
+  gap: spaceXl();
 
-  .linkCategory {
-    display: flex;
-    flex-direction: column;
-    gap: rem(12px);
+  @include tabletAndUp {
+    flex-direction: row;
+    gap: spaceL();
   }
+}
 
-  .linkCategoryHeading {
+.linkCategoryBlock {
+  display: flex;
+  flex-direction: column;
+  gap: spaceM();
+
+  h3 {
     color: $colorGray00;
   }
+
+  @include tabletAndUp {
+    width: 30%;
+  }
+}
+
+.categoryLinks {
+  display: flex;
+  flex-direction: column;
+  gap: spaceS();
 
   a {
     color: $colorGray00;
@@ -53,39 +72,4 @@
   padding: rem(8px) 0;
   background-color: $colorPrimary600;
   color: $colorGray00;
-}
-
-@include tabletAndUp {
-  .content {
-    flex-direction: row;
-    padding-bottom: rem(96px);
-  }
-
-  .marketingBody {
-    margin-bottom: rem(48px);
-  }
-
-  .linkWrapper {
-    flex-direction: row;
-    gap: unset;
-
-    .linkCategory {
-      gap: rem(26px);
-      width: 30%;
-    }
-  }
-}
-
-@include desktopAndUp {
-  .marketingBody {
-    margin-bottom: rem(32px);
-  }
-
-  .linkWrapper {
-    gap: rem(32px);
-
-    .linkCategory {
-      margin-left: rem(16px);
-    }
-  }
 }

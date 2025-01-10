@@ -26,27 +26,23 @@ const Footer: React.FunctionComponent = () => {
             className={`${styles.textAndSocial} col-6-lg col-12-md col-2-sm`}
           >
             <div className={styles.marketingBody}>{marketingBody}</div>
-            <div className="desktop-and-up">
-              {socialSection}
-            </div>
+            <div className="desktop-and-up">{socialSection}</div>
           </div>
           <div className={`${styles.linkWrapper} col-6-lg col-12-md col-2-sm`}>
             {linkCategories.map((category, index) => (
-              <div className={styles.linkCategory}>
-                <div className={`${styles.linkCategoryHeading} subheading3`}>
-                  {category.title}
+              <div className={styles.linkCategoryBlock}>
+                <h3 className="subheading3">{category.title}</h3>
+                <div className={styles.categoryLinks}>
+                  {category.links.map((link) => (
+                    <a className={styles.link} href={link.href}>
+                      {link.text}
+                    </a>
+                  ))}
                 </div>
-                {category.links.map((link) => (
-                  <a className={styles.link} href={link.href}>
-                    {link.text}
-                  </a>
-                ))}
-                {index === linkCategories.length - 1 && (
-                  <div className="tablet-and-down">{socialSection}</div>
-                )}
               </div>
             ))}
           </div>
+          <div className="tablet-and-down">{socialSection}</div>
         </div>
       </div>
       <div className={`${styles.copyRight} row-container`}>
