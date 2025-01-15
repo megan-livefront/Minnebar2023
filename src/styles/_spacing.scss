@@ -10,29 +10,29 @@
 }
 
 @function spaceS() {
-  @return fluid(12px, 16px);
+  @return breakpointTransition(12px, 16px);
 }
 
 @function spaceM() {
-  @return fluid(16px, 24px);
+  @return breakpointTransition(16px, 24px);
 }
 
 @function spaceL() {
-  @return fluid(24px, 40px);
+  @return breakpointTransition(24px, 40px);
 }
 
 @function spaceXl() {
-  @return fluid(40px, 80px);
+  @return breakpointTransition(40px, 80px);
 }
 
 @function spaceXxl() {
-  @return fluid(72px, 160px);
+  @return breakpointTransition(72px, 160px);
 }
 
 @function spaceXxxl() {
-  @return fluid(80px, 240px);
+  @return breakpointTransition(80px, 240px);
 }
 
 @function spaceContentMargin() {
-  @return fluid(48px, 24px);
+  @return breakpointTransition(48px, 24px);
 }

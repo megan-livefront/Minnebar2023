@@ -23,8 +23,6 @@ $desktopGridMargin: 3rem;
 $tabletBreakpointPx: remToPx($tabletGridMaxWidth + 2 * $tabletGridMargin);
 $desktopBreakpointPx: remToPx($desktopGridMaxWidth + 2 * $desktopGridMargin);
 $mobileMaxBreakpointPx: $tabletBreakpointPx - 1px;
-$breakpointFluidMin: 48rem; // 768px
-$breakpointFluidMax: 125rem; // 2000px
 
 @mixin tabletAndUp {
   @media only screen and (min-width: rem($tabletBreakpointPx - 1px)) {
