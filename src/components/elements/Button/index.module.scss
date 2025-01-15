@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: rem(1.5px) solid $colorPrimary500;
+  border: rem(1.5px) solid $brandPrimary;
   cursor: pointer;
   gap: spaceXs();
 
@@ -26,13 +26,13 @@
   }
 
   &.solid {
-    background: $colorPrimary500;
-    color: $colorGray00;
+    background: $brandPrimary;
+    color: $reversed;
   }
 
   &.outlined {
     background: transparent;
-    color: $colorPrimary500;
+    color: $brandPrimary;
   }
 
   &.icon-before {
@@ -44,8 +44,7 @@
   }
 
   &.disabled {
-    background: $colorPrimary200;
-    color: $colorGray00;
+    opacity: 0.8;
   }
 
   &.loading {

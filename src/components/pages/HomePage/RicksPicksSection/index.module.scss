@@ -4,25 +4,25 @@
   padding: spaceL() 0 spaceM();
   background: linear-gradient(
     to bottom,
-    $colorBackground 0%,
-    $colorBackground 85%,
-    $colorPrimary500 85%,
-    $colorPrimary500 100%
+    $backgroundPrimary 0%,
+    $backgroundPrimary 85%,
+    $brandPrimary 85%,
+    $brandPrimary 100%
   );
 
   @include tabletAndUp {
     background: linear-gradient(
       to bottom,
-      $colorBackground 0%,
-      $colorBackground 70%,
-      $colorPrimary500 70%,
-      $colorPrimary500 100%
+      $backgroundPrimary 0%,
+      $backgroundPrimary 70%,
+      $brandPrimary 70%,
+      $brandPrimary 100%
     );
   }
 }
 
 .introWrapper {
-  background: $colorGray00;
+  background: $reversed;
   padding: spaceL();
   margin-top: spaceS();
 }
@@ -62,11 +62,11 @@
 }
 
 .bodyText {
-  color: $colorGray300;
+  color: $textPrimary;
 }
 
 .booksWrapper {
-  background: $colorTertiary500;
+  background: $brandTertiary;
   display: flex;
   flex-direction: column;
   align-items: center;

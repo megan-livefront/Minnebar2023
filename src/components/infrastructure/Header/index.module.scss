@@ -1,7 +1,7 @@
 @use "../../../styles/index.scss" as *;
 
 .container {
-  background-color: $colorGray00;
+  background-color: $backgroundPrimary;
 }
 
 .nav {
@@ -10,7 +10,7 @@
   padding: rem(40px) 0;
 
   a {
-    color: $colorGray500;
+    color: $textPrimary;
   }
 }
 

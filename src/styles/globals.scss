@@ -31,8 +31,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: $colorBackground;
-  color: $colorTextBody;
+  background: $backgroundPrimary;
+  color: $textPrimary;
 
   @include textBodyRegular;
 }
@@ -44,25 +44,25 @@ body {
 }
 
 h1 {
-  color: $colorTextHeading;
+  color: $headlines;
 
   @include textHeading01;
 }
 
 h2 {
-  color: $colorTextHeading;
+  color: $headlines;
 
   @include textHeading02;
 }
 
 h3 {
-  color: $colorTextHeading;
+  color: $headlines;
 
   @include textHeading03;
 }
 
 h4 {
-  color: $colorTextHeading;
+  color: $headlines;
 
   @include textHeading04;
 }
@@ -76,13 +76,13 @@ a {
 }
 
 .subheading1 {
-  color: $colorTextSubheading;
+  color: $headlines;
 
   @include textSubheading01;
 }
 
 .subheading3 {
-  color: $colorTextSubheading;
+  color: $headlines;
 
   @include textSubheading03;
 }

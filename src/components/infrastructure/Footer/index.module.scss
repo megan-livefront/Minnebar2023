@@ -1,8 +1,8 @@
 @use "../../../styles/index.scss" as *;
 
 .container {
-  background-color: $colorPrimary500;
-  color: $colorGray00;
+  background-color: $brandPrimary;
+  color: $reversed;
   padding: spaceL() 0 spaceXl();
 }
 
@@ -51,7 +51,7 @@
   gap: spaceM();
 
   h3 {
-    color: $colorGray00;
+    color: $reversed;
   }
 }
 
@@ -62,13 +62,13 @@
   @include textBodySmall;
 
   a {
-    color: $colorGray00;
+    color: $reversed;
     max-width: rem(150px);
   }
 }
 
 .copyRight {
   padding: rem(8px) 0;
-  background-color: $colorPrimary600;
-  color: $colorGray00;
+  background-color: #000000; // primary 700
+  color: $reversed;
 }
