@@ -31,7 +31,7 @@ const RicksPicksSection: React.FunctionComponent = () => {
               alignment: "after",
             }}
           >
-            See all
+            See All
           </Button>
         </div>
       </div>
