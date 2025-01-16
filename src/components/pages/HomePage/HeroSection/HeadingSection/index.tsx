@@ -5,14 +5,14 @@ const HeadingSection: React.FunctionComponent = () => {
   return (
     <section className="row-container">
       <div className={`row column-reverse-sm ${styles.content}`}>
-        <div className={`${styles.imageWrapper} col-4-lg col-4-md col-2-sm`}>
+        <div className={`${styles.imageWrapper} col-4-lg col-6-md col-2-sm`}>
           <img
             className={styles.image}
             src="/assets/photos/heroImage.png"
             alt=""
           />
         </div>
-        <div className={`col-7-lg col-7-md col-12-sm ${styles.textContent}`}>
+        <div className={`col-7-lg col-6-md col-12-sm ${styles.textContent}`}>
           <h1>
             Unlocking the <BlackoutText text="possibly" /> true secrets of the{" "}
             <BlackoutText text="made up" /> universe

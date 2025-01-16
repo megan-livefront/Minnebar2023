@@ -13,22 +13,20 @@ const SearchSection: React.FunctionComponent = () => {
         className={`row row-justify-end-md row-justify-end-lg ${styles.searchSection}`}
       >
         <div className={`col-7-lg col-12-md col-2-sm ${styles.textContent}`}>
-          <div className={styles.searchHeader}>
-            Ignite your great awakening
-          </div>
+          <div className={styles.searchHeader}>Ignite your great awakening</div>
           <InputField
             placeholder="Search for a title, author, or topic..."
             icon={icon}
           />
         </div>
+        <img
+          className={styles.floatingImage}
+          src="/assets/photos/floatingSearchImage.png"
+          alt="man in tinfoil hat reading"
+        />
       </div>
-      <img
-        className={styles.floatingImage}
-        src="/assets/photos/floatingSearchImage.png"
-        alt="man in tinfoil hat reading"
-      />
     </div>
   );
-}
+};
 
-export default SearchSection
+export default SearchSection;

@@ -2,7 +2,15 @@
 
 .container {
   background: $brandSecondary;
-  padding: spaceL() 0;
+  padding: spaceXxl() 0 spaceL();
+  position: relative;
+
+  @include tabletAndUp {
+    padding: spaceL() 0;
+  }
+}
+
+.searchSection {
   position: relative;
 }
 
@@ -14,19 +22,20 @@
 
 .floatingImage {
   position: absolute;
-  width: 60%;
-  left: -10%;
-  bottom: 80%;
+  width: rem(296px);
+  left: rem(-70px);
+  bottom: rem(100px);
   z-index: 1;
 
   @include tabletAndUp {
-    left: 0;
-    width: 30%;
+    left: rem(-90px);
+    width: rem(344px);
+    bottom: rem(85px);
   }
 
   @include desktopAndUp {
-    bottom: rem(-37px);
-    left: rem(-4px);
+    bottom: rem(-76px);
+    left: rem(-127px);
     width: rem(454px);
   }
 }
