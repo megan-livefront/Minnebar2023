@@ -18,17 +18,15 @@
   left: -10%;
   bottom: 80%;
   z-index: 1;
-}
 
-@include tabletAndUp {
-  .floatingImage {
+  @include tabletAndUp {
     left: 0;
     width: 30%;
   }
-}
 
-@include desktopAndUp {
-  .floatingImage {
-    bottom: rem(-24px);
+  @include desktopAndUp {
+    bottom: rem(-37px);
+    left: rem(-4px);
+    width: rem(454px);
   }
 }

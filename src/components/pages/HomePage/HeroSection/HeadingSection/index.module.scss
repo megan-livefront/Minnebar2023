@@ -3,6 +3,11 @@
 .content {
   flex-direction: column-reverse;
   margin: spaceL() 0 0;
+
+  @include tabletAndUp {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .imageWrapper {
@@ -12,21 +17,24 @@
 
 .image {
   max-width: 100%;
-  margin-bottom: rem(-10px);
   height: fit-content;
   margin-top: rem(32px);
+
+  @include tabletAndUp {
+    margin-top: 0;
+  }
 }
 
-.subheading {
-  margin-top: rem(16px);
-}
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
 
-@include tabletAndUp {
-  .content {
-    flex-direction: row;
+  @include tabletAndUp {
+    margin-bottom: rem(76px);
   }
 
-  .image {
-    margin-top: 0;
+  @include desktopAndUp {
+    margin-bottom: rem(56px);
   }
 }
