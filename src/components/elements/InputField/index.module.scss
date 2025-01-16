@@ -24,6 +24,8 @@
     padding: rem(12px) rem(16px) rem(12px) rem(12px);
     border-radius: rem(5px);
 
+    @include textBodyRegular;
+
     &:focus {
       outline: none;
     }

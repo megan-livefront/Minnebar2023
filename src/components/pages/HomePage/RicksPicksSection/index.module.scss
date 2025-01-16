@@ -40,7 +40,7 @@
   img {
     height: rem(150px);
     position: absolute;
-    bottom: rem(-32px);
+    bottom: calc(#{spaceL()} * -1);
     left: 50%;
     transform: translate(-50%, 0);
   }
@@ -63,6 +63,7 @@
 
 .bodyText {
   color: $textPrimary;
+  @include textBodySmall;
 }
 
 .booksWrapper {

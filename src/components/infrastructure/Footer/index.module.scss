@@ -9,6 +9,7 @@
 .content {
   flex-direction: column;
   gap: spaceXl();
+  @include textBodySmall;
 
   @include tabletAndUp {
     flex-direction: row;

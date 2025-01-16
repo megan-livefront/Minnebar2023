@@ -16,6 +16,7 @@
 
     .title {
       padding-right: rem(8px);
+      @include textBodyTiny;
     }
 
     hr {
@@ -30,6 +31,6 @@
 
   .bookCover {
     z-index: 1;
-    height: rem(125px);
+    height: rem(112px);
   }
 }
