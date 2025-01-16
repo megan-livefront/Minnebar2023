@@ -10,7 +10,8 @@
 }
 
 .container {
-  padding: rem(14px) rem(32px);
+  padding: spaceXs() spaceM();
+  min-height: rem(54px);
   display: flex;
   align-items: center;
   justify-content: center;
