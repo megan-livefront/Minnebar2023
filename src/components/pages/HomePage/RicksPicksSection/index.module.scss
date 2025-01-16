@@ -14,8 +14,8 @@
     background: linear-gradient(
       to bottom,
       $backgroundPrimary 0%,
-      $backgroundPrimary 70%,
-      $brandPrimary 70%,
+      $backgroundPrimary 67.5%,
+      $brandPrimary 67.5%,
       $brandPrimary 100%
     );
   }
@@ -50,9 +50,9 @@
 
     img {
       height: auto;
-      left: unset;
+      left: rem(-37px);
       transform: none;
-      width: 80%;
+      width: 84%;
     }
   }
 }
@@ -63,6 +63,7 @@
 
 .bodyText {
   color: $textPrimary;
+  max-width: rem(631px);
   @include textBodySmall;
 }
 

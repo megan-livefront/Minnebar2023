@@ -15,12 +15,12 @@
         "price": "99.99"
       },
       {
-        "imgSrc": "/assets/books/moon.png",
+        "imgSrc": "/assets/books/secretSocieties.png",
         "title": "Secret Handshakes and Awkward Encounters",
         "price": "99.99"
       },
       {
-        "imgSrc": "/assets/books/secretSocieties.png",
+        "imgSrc": "/assets/books/moon.png",
         "title": "Moonsplaining: How Hollywood Faked the Moon Landing",
         "price": "99.99"
       }
