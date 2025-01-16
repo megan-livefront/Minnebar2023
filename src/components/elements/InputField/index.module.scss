@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #000000; // secondary 200
+  background-color: $heroInput;
   border-radius: rem(5px);
 
   &:focus-within {
@@ -19,12 +19,18 @@
 
   input {
     border: none;
-    background-color: #000000; // secondary 200
+    background-color: $heroInput;
     width: 100%;
     padding: rem(12px) rem(16px) rem(12px) rem(12px);
     border-radius: rem(5px);
+    color: $headlines;
 
     @include textBodyRegular;
+
+    &::placeholder {
+      color: $headlines;
+      opacity: 1;
+    }
 
     &:focus {
       outline: none;

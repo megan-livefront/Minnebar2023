@@ -21,6 +21,11 @@
 
   @include textButtonRegular;
 
+  img {
+    width: rem(24px);
+    height: rem(24px);
+  }
+
   .loadingIcon {
     display: none;
     animation: spin 2s linear infinite;

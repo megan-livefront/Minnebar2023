@@ -34,5 +34,7 @@ $animationSpeed: 40s;
     align-items: center;
     justify-content: center;
     gap: rem(8px);
+
+    @include textSubheading03;
   }
 }

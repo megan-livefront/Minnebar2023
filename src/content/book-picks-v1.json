@@ -7,22 +7,22 @@
       {
         "imgSrc": "/assets/books/chemtrails.png",
         "title": "How Do Airplanes Make Clouds? And Other Puzzles for Curious Kids",
-        "price": "99.99"
+        "price": "$99.99"
       },
       {
         "imgSrc": "/assets/books/flatEarth.png",
         "title": "Flat. Out. Wrong. Adventures in the Flat World",
-        "price": "99.99"
+        "price": "$99.99"
       },
       {
         "imgSrc": "/assets/books/secretSocieties.png",
         "title": "Secret Handshakes and Awkward Encounters",
-        "price": "99.99"
+        "price": "$99.99"
       },
       {
         "imgSrc": "/assets/books/moon.png",
         "title": "Moonsplaining: How Hollywood Faked the Moon Landing",
-        "price": "99.99"
+        "price": "$99.99"
       }
     ]
   }

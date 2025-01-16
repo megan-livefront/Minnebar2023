@@ -16,8 +16,8 @@
 
 .searchHeader {
   margin-bottom: rem(8px);
-
   @include textSubheading03;
+  color: $brandPrimary;
 }
 
 .floatingImage {
