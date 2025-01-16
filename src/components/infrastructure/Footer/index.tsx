@@ -7,8 +7,8 @@ const Footer: React.FunctionComponent = () => {
 
   const socialSection = (
     <div className={styles.socialWrapper}>
-      {socialIcons.map((icon) => (
-        <img src={icon.src} alt={icon.altText} />
+      {socialIcons.map((icon, index) => (
+        <img src={icon.src} alt={icon.altText} key={index} />
       ))}
     </div>
   );
@@ -31,12 +31,12 @@ const Footer: React.FunctionComponent = () => {
           <section
             className={`${styles.linksSection} col-6-lg col-12-md col-2-sm`}
           >
-            {linkCategories.map((category) => (
-              <div className={styles.linkCategoryBlock}>
+            {linkCategories.map((category, index) => (
+              <div className={styles.linkCategoryBlock} key={index}>
                 <h3 className="subheading3">{category.title}</h3>
                 <div className={styles.categoryLinks}>
-                  {category.links.map((link) => (
-                    <a className={styles.link} href={link.href}>
+                  {category.links.map((link, index) => (
+                    <a className={styles.link} href={link.href} key={index}>
                       {link.text}
                     </a>
                   ))}

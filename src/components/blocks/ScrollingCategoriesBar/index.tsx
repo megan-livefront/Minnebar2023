@@ -7,8 +7,8 @@ const ScrollingCategoriesBar: React.FunctionComponent = () => {
   return (
     <div className={styles.slider}>
       <div className={styles.slideTrack}>
-        {categories.map((category) => (
-          <div className={styles.slide}>
+        {categories.map((category, index) => (
+          <div className={styles.slide} key={index}>
             <img src={category.icon} alt="" />
             {category.title}
           </div>

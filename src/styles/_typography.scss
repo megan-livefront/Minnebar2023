@@ -14,7 +14,7 @@
 }
 
 @mixin textHeading01 {
-  font-size: rem(54px);
+  font-size: rem(56px);
   line-height: rem(60px);
   letter-spacing: -0.018em;
   font-family: "PPTelegraf-UltraBold";
@@ -50,14 +50,14 @@
 }
 
 @mixin textHeading04 {
-  font-size: rem(16px);
-  line-height: rem(24px);
+  font-size: rem(24px);
+  line-height: rem(30px);
   letter-spacing: -0.012em;
   font-family: "PPTelegraf-UltraBold";
 
   @include desktopAndUp {
-    font-size: rem(24px);
-    line-height: rem(32px);
+    font-size: rem(36px);
+    line-height: rem(44px);
   }
 }
 

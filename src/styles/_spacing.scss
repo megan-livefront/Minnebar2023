@@ -34,5 +34,5 @@
 }
 
 @function spaceContentMargin() {
-  @return breakpointTransition(48px, 24px);
+  @return breakpointTransition(24px, 48px);
 }

@@ -10,8 +10,8 @@ const RicksPicksSection: React.FunctionComponent = () => {
   const booksToDisplayTabletAndDown = books.slice(0, 3);
 
   const getBookPicks = (booksToDisplay: typeof books, className: string) =>
-    booksToDisplay.map((book) => (
-      <div className={`${className} col-4 col-2-sm`}>
+    booksToDisplay.map((book, index) => (
+      <div className={`${className} col-4 col-2-sm`} key={index}>
         <BookPick title={book.title} imgSrc={book.imgSrc} price={book.price} />
       </div>
     ));

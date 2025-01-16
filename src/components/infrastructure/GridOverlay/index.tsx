@@ -6,8 +6,8 @@ const GridOverlay: React.FunctionComponent = () => {
   return (
     <div className={`${styles.container} row-container`}>
       <div className={`row ${styles.overlayRow}`}>
-        {columns.map(() => (
-          <div className={`col-1 ${styles.overlayColumn}`}></div>
+        {columns.map((_unused, index) => (
+          <div className={`col-1 ${styles.overlayColumn}`} key={index}></div>
         ))}
       </div>
     </div>

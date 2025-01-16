@@ -13,8 +13,8 @@ const NewArrivalsSection: React.FunctionComponent = () => {
         </div>
       </div>
       <div className="row">
-        {books.map((book) => (
-          <div className={`${styles.bookCard} col-4 col-12-sm`}>
+        {books.map((book, index) => (
+          <div className={`${styles.bookCard} col-4 col-12-sm`} key={index}>
             <BookCard
               imgSrc={book.imgSrc}
               title={book.title}
