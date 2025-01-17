@@ -9,24 +9,34 @@
 .content {
   flex-direction: column;
   gap: spaceXl();
+  align-items: baseline;
   @include textBodySmall;
 
   @include tabletAndUp {
+    gap: spaceL();
     flex-direction: row;
+  }
+
+  @include desktopAndUp {
+    gap: rem(32px);
   }
 }
 
 .logoWrapper {
   margin-bottom: spaceL();
+  display: flex;
 }
 
 .textAndSocial {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: spaceM();
-  padding-right: spaceS();
-  flex-basis: 40%;
-  flex-grow: 1;
+  flex: 1 0 0;
+
+  @include desktopAndUp {
+    margin-right: rem(21px);
+  }
 }
 
 .socialWrapper {
@@ -44,6 +54,10 @@
     grid-template-rows: 1fr;
     gap: spaceL();
   }
+
+  @include desktopAndUp {
+    gap: rem(32px);
+  }
 }
 
 .linkCategoryBlock {
@@ -59,17 +73,21 @@
 .categoryLinks {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   gap: spaceS();
-  @include textBodySmall;
 
   a {
     color: $reversed;
     max-width: rem(150px);
+    white-space: pre-wrap;
+    @include textBodySmall;
   }
 }
 
 .copyRight {
   padding: rem(8px) 0;
-  background-color: #000000; // primary 700
+  background-color: $backgroundQuaternary;
   color: $reversed;
+  @include textBodyTiny;
 }
