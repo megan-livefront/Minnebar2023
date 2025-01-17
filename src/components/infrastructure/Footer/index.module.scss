@@ -35,7 +35,7 @@
   flex: 1 0 0;
 
   @include desktopAndUp {
-    margin-right: rem(21px);
+    margin-right: spaceS();
   }
 }
 

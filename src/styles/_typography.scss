@@ -4,91 +4,98 @@
 @mixin textDisplay {
   font-size: rem(80px);
   line-height: rem(100px);
-  letter-spacing: -0.002em;
+  letter-spacing: rem(-1.6px);
   font-family: "PPTelegraf-UltraBold";
 
   @include desktopAndUp {
     font-size: rem(160px);
     line-height: rem(200px);
+    letter-spacing: rem(-3.2px);
   }
 }
 
 @mixin textHeading01 {
   font-size: rem(56px);
   line-height: rem(60px);
-  letter-spacing: -0.018em;
+  letter-spacing: rem(-1.12px);
   font-family: "PPTelegraf-UltraBold";
 
   @include desktopAndUp {
     font-size: rem(72px);
     line-height: rem(80px);
+    letter-spacing: rem(-1.44px);
   }
 }
 
 @mixin textHeading02 {
   font-size: rem(36px);
   line-height: rem(42px);
-  letter-spacing: -0.015em;
+  letter-spacing: rem(-0.72px);
   font-family: "PPTelegraf-UltraBold";
 
   @include desktopAndUp {
     font-size: rem(48px);
     line-height: rem(56px);
+    letter-spacing: rem(-0.96px);
   }
 }
 
 @mixin textHeading03 {
   font-size: rem(25px);
   line-height: rem(32px);
-  letter-spacing: -0.015em;
+  letter-spacing: rem(-0.5px);
   font-family: "PPTelegraf-UltraBold";
 
   @include desktopAndUp {
     font-size: rem(40px);
     line-height: rem(48px);
+    letter-spacing: rem(-0.8px);
   }
 }
 
 @mixin textHeading04 {
   font-size: rem(24px);
   line-height: rem(30px);
-  letter-spacing: -0.012em;
+  letter-spacing: rem(-0.48px);
   font-family: "PPTelegraf-UltraBold";
 
   @include desktopAndUp {
     font-size: rem(36px);
     line-height: rem(44px);
+    letter-spacing: rem(-0.72px);
   }
 }
 
 @mixin textSubheading01 {
   font-size: rem(16px);
   line-height: rem(24px);
-  letter-spacing: -0.012em;
+  letter-spacing: rem(-0.16px);
   font-family: "Poppins-SemiBold";
 
   @include desktopAndUp {
     font-size: rem(24px);
     line-height: rem(32px);
+    letter-spacing: rem(-0.24px);
   }
 }
 
 @mixin textSubheading02 {
   font-size: rem(16px);
   line-height: rem(24px);
-  letter-spacing: -0.015em;
+  letter-spacing: rem(-0.16px);
   font-family: "Poppins-SemiBold";
 
   @include desktopAndUp {
     font-size: rem(20px);
     line-height: rem(28px);
+    letter-spacing: rem(-0.2px);
   }
 }
 
 @mixin textSubheading03 {
   font-size: rem(16px);
   line-height: rem(24px);
-  letter-spacing: -0.012em;
+  letter-spacing: rem(-0.16px);
   font-family: "Poppins-SemiBold";
 }
 
@@ -96,7 +103,7 @@
   font-size: rem(16px);
   line-height: rem(24px);
   letter-spacing: 0;
-  font-family: "Poppins-Light";
+  font-family: "Poppins-Regular";
 
   @include desktopAndUp {
     font-size: rem(18px);
@@ -108,14 +115,14 @@
   font-size: rem(16px);
   line-height: rem(24px);
   letter-spacing: 0;
-  font-family: "Poppins-Light";
+  font-family: "Poppins-Regular";
 }
 
 @mixin textBodySmall {
   font-size: rem(14px);
   line-height: rem(20px);
   letter-spacing: 0;
-  font-family: "Poppins-Light";
+  font-family: "Poppins-Regular";
 }
 
 @mixin textBodyTiny {
