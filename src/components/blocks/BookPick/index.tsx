@@ -14,7 +14,11 @@ const BookPick: React.FunctionComponent<Props> = ({ title, imgSrc, price }) => {
         <hr />
         <div className={styles.price}>{price}</div>
       </div>
-      <img className={styles.bookCover} src={imgSrc} alt={`${title} book cover`} />
+      <img
+        className={styles.bookCover}
+        src={imgSrc}
+        alt={`${title} book cover`}
+      />
     </div>
   );
 };

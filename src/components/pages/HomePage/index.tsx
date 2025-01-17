@@ -16,6 +16,6 @@ const HomePage: React.FunctionComponent = () => {
       <Footer />
     </>
   );
-}
+};
 
-export default HomePage
+export default HomePage;

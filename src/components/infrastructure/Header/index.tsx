@@ -16,10 +16,7 @@ const DesktopTabletNav: React.FunctionComponent = () => {
         Account
       </a>
       <a className={styles.navLink} href="/">
-        <img
-          src="/assets/icons/shoppingBag.svg"
-          alt="Shopping bag"
-        />
+        <img src="/assets/icons/shoppingBag.svg" alt="Shopping bag" />
       </a>
     </div>
   );
